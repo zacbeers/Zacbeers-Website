@@ -1,8 +1,8 @@
 /*reset*/
 
 * {
-    -webkit-transition: all ease-in 0.2s;
-    transition:         all ease-in 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition:         all ease-in-out 0.2s;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -62,11 +62,38 @@ div {
 .vb1/*vertical box one*/ {
     min-height: 80px;
 }
-.header.vb1 {
-    min-height: 60px;
-}
 .vb2/*vertical box two*/ {
     min-height:120px;
+}
+.mt/*margin top*/ {
+    margin-top: 40px;
+}
+.mb/*margin top*/ {
+    margin-bottom: 40px;
+}
+.mt1 {
+    margin-top: 80px;
+}
+.mb1 {
+    margin-bottom: 80px;
+}
+.mt2 {
+    margin-top: 120px;
+}
+.mb2 {
+    margin-bottom: 120px;
+}
+.mt3 {
+    margin-top: 160px;
+}
+.mb3 {
+    margin-bottom: 160px;
+}
+.mt4 {
+    margin-top: 200px;
+}
+.mb4 {
+    margin-bottom: 200px;
 }
 .fs/*full screen*/ {
     min-height: 100%;
@@ -110,6 +137,9 @@ div {
     list-style: none;
     margin: 10px;
 }
+.np/*no padding*/ {
+    padding: 0px;
+}
 .cb{
     clear: both;
 }
@@ -137,8 +167,9 @@ div {
 .circle {
     border-radius: 50%;
     background-size: cover;
+    background: #fff;
     overflow: hidden;
-    border: 2px solid #fff;
+    border: 6px solid #fff;
 }
 /*colors & textures*/
 .wood {
@@ -146,7 +177,9 @@ div {
     background-size: 100%;
 }
 .cover {
-    background-image: url('../images/cover.png');
+    background: #3286c6;
+    background-image: url('../images/cover.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     min-height: 100%;
@@ -201,6 +234,8 @@ textarea, input{
     height: 32px;
     margin: 14px 5px;
     text-decoration: none;
+    background-image: url('../images/icons/social.jpg');
+    background-size: 200%;
 }
 
 /*extras*/
@@ -210,6 +245,10 @@ textarea, input{
 .title2 {
     font-size: 250%;
     line-height: 80px;
+}
+.cover .title2 {
+    font-size: 200%;
+    line-height: 60px;
 }
 .bt/*bold text*/ {
     font-weight: 700;
@@ -248,7 +287,7 @@ textarea, input{
     position: absolute;
     left:50%;
     margin-left:-32px;
-    bottom: 80px;
+    margin-bottom: 80px;
     -webkit-animation:  pulse 3s infinite alternate;
     -moz-animation:     pulse 3s infinite alternate;
     -o-animation:       pulse 3s infinite alternate;
@@ -355,37 +394,90 @@ textarea, input{
         opacity: 1;
     }
 }
-@-o-keyframes guy {
+@-webkit-keyframes hide {
     0% {
-        transform:rotate(30deg);
+        opacity: inherit;
     }
     100% {
-        transform:rotate(-30deg);
+        opacity: 0;
     }
 }
-@keyframes guy {
+@-moz-keyframes hide {
     0% {
-        transform:rotate(30deg);
+        opacity: inherit;
     }
     100% {
-        transform:rotate(-30deg);
+        opacity: 0;
     }
 }
-@-webkit-keyframes guy {
+@-o-keyframes hide {
     0% {
-        transform:rotate(30deg);
+        opacity: inherit;
     }
     100% {
-        transform:rotate(-30deg);
+        opacity: 0;
     }
 }
-
-@-webkit-keyframes guy {
+@keyframes hide {
     0% {
-        transform:rotate(30deg);
+        opacity: inherit;
     }
     100% {
-        transform:rotate(-30deg);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes load {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        z-index: 999;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        z-index: 999;
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 901px) {
+    .arrow-down {
+        bottom: 80px;
+        margin-bottom: 0px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -399,15 +491,11 @@ textarea, input{
         line-height: normal;
         font-size: 200%;
     }
-    .cover {
-        background-position: bottom center;
-        background-size: 200%;
-    }
-    .profile {
-        width: 100% !important;
-    }
     .arrow-down1 {
         display: none;
+    }
+    .cover {
+        background-size: 120%;
     }
 }
 @media screen and (max-width: 800px) {
@@ -432,14 +520,131 @@ textarea, input{
     html, body {
         font-size: 80%;
     }
-    .arrow-down {
-        display: none!important;
-    }
     .title2 {
         line-height: 40px;
     }
     .btn, .fullnav{
         font-weight: 700;
         font-size: 150%;
+    }
+    .cover {
+        min-height: 40px;
+        font-size: 120%;
+    }
+    .cover .l {
+        float: none!important;
+        width: 60%;
+    }
+    .cover .r {
+        float: none!important;
+    }
+    .cover .half.l {
+        margin-left: 20%;
+    }
+    .cover p {
+        text-align: center!important;
+    }
+    .cover .circle {
+        margin: 0px auto;
+    }
+    .cover .mt4 {
+        margin-top: 80px;
+    }
+    .cover .mb2 {
+        margin-bottom: 80px;
+    }
+    .arrow-down {
+        margin-top: -40px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 24px solid #fff;
+        margin-left:-20px;
+        
+    }
+}
+@media screen and (max-width: 500px) {
+    .break {
+        display:none;
+    }
+    .cover {
+        background-size: 250%;
+        background-position: center center;
+    }
+    .title2 {
+        line-height: 20px;
+    }
+    .cover .half.l {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .header {
+        top: 0px!important;
+        position: fixed;
+        opacity: 0.9;
+    }
+    /*disable show hide animations*/
+    @-webkit-keyframes show {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @-moz-keyframes show {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @-o-keyframes show {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @keyframes show {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @-webkit-keyframes hide {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @-moz-keyframes hide {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @-o-keyframes hide {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
+    }
+    @keyframes hide {
+        0% {
+            opacity: inherit;
+        }
+        100% {
+            opacity: inherit;
+        }
     }
 }

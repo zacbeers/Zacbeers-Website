@@ -1,6 +1,5 @@
-<?php
-require_once 'header.php';
-?>
+<!--header-->
+<?php require_once 'includes/modules/header.php'; ?>
 <div class="box1 ct" id="photography">
     <div class="box1 ct"></div>
     <div class="box1 ct"></div>
@@ -38,16 +37,13 @@ require_once 'header.php';
     </div>
 </div>
 <!--work-buttons-->
-<!--footer-->
-<div class="box1 ct">
+<div class="box1 ct" id="end">
     <div class="box1 ct">
         <div class="box3 vb1 in">
             <p class="title2 bt wt lt">see more work:</p>
         </div>
     </div>
-<?php
-require_once 'work-buttons.php';
-
-echo '</div>';
-
-require_once 'footer.php';
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>
+<!--footer-->
+<?php include_once 'includes/modules/footer.php'; ?>

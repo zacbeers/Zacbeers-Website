@@ -1,6 +1,5 @@
-<?php
-require_once 'header.php';
-?>
+<!--header-->
+<?php require_once 'includes/modules/header.php'; ?>
     <style>
         html, body {
             overflow: hidden;
@@ -16,7 +15,7 @@ require_once 'header.php';
 			* Plugin intialization
 			*/
 	    	$('#pagepiling').pagepiling({
-	          	direction: 'horizontal',
+	          	direction: 'vertical',
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2'],
 			    navigation: {
@@ -33,10 +32,9 @@ require_once 'header.php';
 			    	}else{
 			    		$('#pp-nav').addClass('custom');
 			    	}
-                    var url      = window.location.href; 
+                    var url = window.location.href; 
                     if (url.indexOf("page2") > -1) {
                         window.location.replace("videos-after.php");
-                        $(".content").fadeOut();
                     }
 			    }
 			});
@@ -52,20 +50,15 @@ require_once 'header.php';
             </div>
             <div class="box3 in ct">
                 <iframe width="560" height="315" src="//www.youtube.com/embed/YK0za-Hh0y4?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <?php require_once 'arrow-down.php'; ?>
+                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
             </div>
 	    </div>
 	    <div class="section wood ct" id="section2">
             <div class="box1 ct">
-        <div class="box3 vb1 in">
-            <p class="title2 bt wt lt">see more work:</p>
+                <div class="box3 vb1 in">
+                    <p class="title2 bt wt lt">see more work:</p>
+                </div>
+            </div>
+            <?php include_once 'includes/modules/work-buttons.php'; ?>
         </div>
     </div>
-<?php
-require_once 'work-buttons.php';
-echo '</div>';
-?>
-	    </div>
-	</div>
-</body>
-</html>

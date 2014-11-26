@@ -1,6 +1,5 @@
-<?php
-require_once 'header.php';
-?>
+<!--header-->
+<?php require_once 'includes/modules/header.php'; ?>
     <style>
         html, body {
             overflow: hidden;
@@ -33,10 +32,9 @@ require_once 'header.php';
 			    	}else{
 			    		$('#pp-nav').addClass('custom');
 			    	}
-                    var url      = window.location.href; 
+                    var url = window.location.href; 
                     if (url.indexOf("page31") > -1) {
                         window.location.replace("photography-after.php");
-                        $(".content").fadeOut();
                     }
 			    }
 			});
@@ -54,7 +52,7 @@ require_once 'header.php';
                 <a href="images/projects/photography-2-1.png" class="ot point">
                     <img src="images/projects/photography-2-1.png" class="pi in" alt="french bull dog photo" title="french bull dog photo">
                 </a>
-                <?php require_once 'arrow-down.php'; ?>
+                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
             </div>
 	    </div>
 	    <div class="section wood ct" id="section2">
@@ -378,17 +376,12 @@ require_once 'header.php';
                 </a>
             </div>
 	    </div>
-	    <div class="section wood ct" id="section31">
+	    <div class="section wood ct" id="section3">
             <div class="box1 ct">
-        <div class="box3 vb1 in">
-            <p class="title2 bt wt lt">see more work:</p>
+                <div class="box3 vb1 in">
+                    <p class="title2 bt wt lt">see more work:</p>
+                </div>
+            </div>
+            <?php include_once 'includes/modules/work-buttons.php'; ?>
         </div>
     </div>
-<?php
-require_once 'work-buttons.php';
-echo '</div>';
-?>
-	    </div>
-	</div>
-</body>
-</html>

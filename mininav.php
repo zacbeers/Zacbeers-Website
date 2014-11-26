@@ -1,9 +1,11 @@
-<?php
-require_once 'header.php';
-?>
+<!--header-->
+<?php require_once 'includes/modules/header.php'; ?>
     <style>
         html, body {
             overflow: hidden;
+        }
+        #header {
+            top: -120;
         }
     </style>
 	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
@@ -46,6 +48,7 @@ require_once 'header.php';
                 <a href="images/labs/lab-2-1.gif" class="ot point">
                     <img src="images/labs/lab-2-1.gif" class="pi in" alt="iPhone 3d model" title="iPhone 3d model">
                 </a>
+                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
             </div>
 	    </div>
 	    <div class="section wood ct" id="section2">
@@ -67,5 +70,4 @@ require_once 'header.php';
             </div>
 	    </div>
 	</div>
-</body>
-</html>
+

@@ -1,20 +1,18 @@
+<!--header-->
+<?php require_once 'includes/modules/header.php'; ?>
 <div class="section wood ct fs" id="section2">
-                    <div class="box1 ct vb2"></div>
-                    <div class="box1 ct"></div>
-                    <div class="box1 ct">
-                        <div class="box3 vb1 in">
-                            <p class="title2 bt wt lt">see more work:</p>
-                        </div>
-                    </div>
-<?php
-require_once 'work-buttons.php';
-echo '</div>';
-require_once 'arrow-down.php';
-?>
-                </div>
-<?php
-require_once 'header-pure.php';
-?>
+    <div class="box1 ct vb2"></div>
+    <div class="box1 ct"></div>
+    <div class="box1 ct">
+        <div class="box3 vb1 in">
+            <p class="title2 bt wt lt">see more work:</p>
+        </div>
+    </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>
+<a href="#design" class="point">
+    <?php include_once 'includes/modules/arrow-down.php'; ?>
+</a>
 <div class="box1 ct" id="design">
     <div class="box1 ct v1"></div>
     <div class="box1 ct v1"></div>
@@ -70,6 +68,4 @@ require_once 'header-pure.php';
 <div class="box1 ct"></div>
 </div>
 <!--footer-->
-<div class="box1 ct" id="end"></div>
-<?php require_once 'footer.php';
-?>
+<?php require_once 'includes/modules/footer.php';

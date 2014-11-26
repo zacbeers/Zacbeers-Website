@@ -1,6 +1,5 @@
-<?php
-require_once 'header.php';
-?>
+<!--header-->
+<?php require_once 'includes/modules/header.php'; ?>
 <div class="box1 ct fs cover-2">
     <div class="box1 ct vb1"></div>
     <div class="box1 ct vb2"></div>
@@ -45,5 +44,4 @@ require_once 'header.php';
     </div>
 </div>
 <!--footer-->
-<?php
-require_once 'footer.php';
+<?php require_once 'includes/modules/footer.php';
