@@ -17,7 +17,7 @@
     </div>
     <div class="box1 vb1">
         <a class="ot l nd point" href="https://github.com/zacbeers/Zacbeers-Website">source code</a>
-        <a class="ot l nd point" href="#">sitemap</a>
+        <a class="ot l nd point" href="sitemap.xml">sitemap</a>
         <p class="wt l nd">copyright <?php echo date("Y"); ?></p>
     </div>
 </div>
