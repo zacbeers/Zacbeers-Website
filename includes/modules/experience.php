@@ -14,8 +14,11 @@
             <a href="http://indefree.com/" target="_blank" class="point">
                 <img src="images/indefree.png" class="in ot co" alt="IndeFree Association" title="IndeFree Association">
             </a>
+            <a href="http://www.becreative360.com/" target="_blank" class="point">
+                <img src="images/becreative.png" class="in ot co" alt="Be Creative 360" title="Be Creative 360">
+            </a>
         </div>
-        <div class="box3 vb2 in mt1">
+        <div class="box3 vb2 in mt1" style="margin-bottom: 80px;">
             <ul class="lt">
                 <li class="nd">
                     <span class="bt">Profesional Skillset: </span>
