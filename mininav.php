@@ -37,7 +37,7 @@
 	    });
     </script>
 	<div id="pagepiling">
-	    <div class="section wood ct" id="section1">
+	    <div class="section dg ct" id="section1">
             <div class="box1 ct"></div>
             <div class="box1 ct"></div>
             <div class="box2 ct in">
@@ -51,7 +51,7 @@
                 <?php include_once 'includes/modules/arrow-down-small.php'; ?>
             </div>
 	    </div>
-	    <div class="section wood ct" id="section2">
+	    <div class="section dg ct" id="section2">
             <div class="box1 ct">
                 <div class="box3 vb1 in">
                     <p class="title2 bt wt lt">download</p>
@@ -65,7 +65,11 @@
                     </div>
                 </div>
                 <div class="box1 vb1 ct">
-                    <a href="labs.php" class="point ot">< back to labs</a>
+                    <<div class="btn in o">
+                        <a href="labs.php" class="point wt">
+                            <p class="c">< back to labs</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 	    </div>

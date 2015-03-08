@@ -1,4 +1,4 @@
-<div class="box1 ct">
+<div class="box1 ct dg">
     <div class="box1 vb1 mt1">
         <p class="title2 wt bt c">labs (experiments)</p>
     </div>

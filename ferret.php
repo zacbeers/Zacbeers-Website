@@ -1,69 +1,46 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-    <style>
-        html, body {
-            overflow: hidden;
+<?php $title = 'Ferret - Illustration'; require_once 'includes/modules/header.php'; ?>
+<!--keyboard navigation-->
+<script>
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            window.location.href = 'everynightidreamofdancing.php';
         }
-        #header {
-            top: -120;
+        else if(event.keyCode == 39) {
+            window.location.href = 'campfire.php';
         }
-    </style>
-	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-    <!--page piling-->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'vertical',
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2'],
-			    navigation: {
-			    	'position': 'right',
-                    'bulletsColor': '#fff',
-			   		'tooltips': ['image', 'see more']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-                    var url = window.location.href; 
-                    if (url.indexOf("page2") > -1) {
-                        window.location.replace("illustration-after.php");
-                    }
-			    }
-			});
-	    });
-    </script>
-    <div id="container">
-        <div class="content">
-            <div id="pagepiling">
-                <div class="section wood ct" id="section1">
-                    <div class="box1 ct"></div>
-                    <div class="box1 ct"></div>
-                    <div class="box2 ct in">
-                        <p class="title bt wt">ferret</p>
-                        <p class="wt">personal illustration</p>
-                    </div>
-                    <div class="box3 in ct">
-                        <a href="images/projects/illustration-8-1.png" class="ot point">
-                            <img src="images/projects/illustration-8-1.png" class="pi in" alt="punk ferret illustraion" title="punk ferret illustration">
-                        </a>
-                        <?php include_once 'includes/modules/arrow-down-small.php'; ?>
-                    </div>
-                </div>
-                <div class="section wood ct" id="section2">
-            <div class="box1 ct">
-                <div class="box3 vb1 in">
-                    <p class="title2 bt wt lt">see more work:</p>
-                </div>
-            </div>
-            <?php include_once 'includes/modules/work-buttons.php'; ?>
-        </div>
+    });
+</script>
+<!--content-->
+<div class="dg ct">
+<!--image 1-->
+    <div class="box2 ct in mt4">
+        <p class="title bt wt"><?php echo $title; ?></p>
+        <p class="wt">Personal Project</p>
     </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/ferret-1.png" class="ot point">
+            <img src="images/projects/ferret-1.png" class="pi in" alt="punk ferret illustraion" title="punk ferret illustration">
+        </a>
+    </div>
+<!--image 2-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/ferret-2.png" class="ot point">
+            <img src="images/projects/ferret-2.png" class="pi in" alt="punk ferret illustraion" title="punk ferret illustration">
+        </a>
+    </div>
+<!--footer-->
+    <div class="box1 vb1 ct mt">
+					<div class="btn in o">
+						<a href="everynightidreamofdancing.php" class="point wt" title="Press LEFT on keyboard">
+							<p class="c">< Last Project - Every Night I Dream of Dancing</p>
+						</a>
+					</div>
+                    <div class="btn in o">
+						<a href="campfire.php" class="point wt" title="Press RIGHT on keyboard">
+							<p class="c">Next Project - Campfire ></p>
+						</a>
+					</div>
+                </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>

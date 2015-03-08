@@ -1,134 +1,76 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-    <style>
-        html, body {
-            overflow: hidden;
+<?php $title = 'Breakfast Photoshoot - Photography'; require_once 'includes/modules/header.php'; ?>
+<!--keyboard navigation-->
+<script>
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            window.location.href = 'idrive.php';
         }
-        #header {
-            top: -120;
+        else if(event.keyCode == 39) {
+            window.location.href = 'passauto.php';
         }
-    </style>
-	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'vertical',
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
-			    navigation: {
-			    	'position': 'right',
-                    'bulletsColor': '#fff',
-			   		'tooltips': ['image 1', 'image 2', 'image 3', 'image 4', 'image 5', 'image 6', 'image 7', 'image 8', 'image 9', 'see more']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-                    var url = window.location.href; 
-                    if (url.indexOf("page8") > -1) {
-                        window.location.replace("photography-after.php");
-                    }
-			    }
-			});
-	    });
-    </script>
-	<div id="pagepiling">
-	    <div class="section wood ct" id="section1">
-            <div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="title bt wt">breakfast photoshoot</p>
-                <p class="wt">personal photography</p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/photography-3-1.png" class="ot point">
-                    <img src="images/projects/photography-3-1.png" class="pi in" alt="young boy picture" title="young boy picture">
-                </a>
-                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section2">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt">I spent Easter morning with my friend and his family as we ate at Mimi's Cafe. Of course, I brought along my camera.</p>
-
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/photography-3-2.png" class="ot point">
-                    <img src="images/projects/photography-3-2.png" class="pi in" alt="chewing food image" title="chewing food image">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section3">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/photography-3-3.png" class="ot point">
-                    <img src="images/projects/photography-3-3.png" class="pi in" alt="baby portait photography" title="baby portrait photography">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section4">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-            </div>
-            <div class="box3 in ct in">
-                <a href="images/projects/photography-3-4.png" class="ot point">
-                    <img src="images/projects/photography-3-4.png" class="pi in" alt="child high five photo" title="child high five photo">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section5">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/photography-3-5.png" class="ot point">
-                    <img src="images/projects/photography-3-5.png" class="pi in" alt="young boy picture" title="young boy picture">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section6">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/photography-3-6.png" class="ot point">
-                    <img src="images/projects/photography-3-6.png" class="pi in" alt="suprised child image" title="suprised child image">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section7">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/photography-3-7.png" class="ot point">
-                    <img src="images/projects/photography-3-7.png" class="pi in" alt="baby portait photography" title="baby portrait photography">
-                </a>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section8">
-            <div class="box1 ct">
-                <div class="box3 vb1 in">
-                    <p class="title2 bt wt lt">see more work:</p>
-                </div>
-            </div>
-            <?php include_once 'includes/modules/work-buttons.php'; ?>
-        </div>
+    });
+</script>
+<!--content-->
+<div class="dg ct">
+<!--image 1-->
+    <div class="box2 ct in mt4">
+        <p class="title bt wt"><?php echo $title; ?></p>
+        <p class="wt">I spent Easter morning with my friend and his family as we ate at Mimi's Cafe. Of course, I brought along my camera.</p>
     </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-1.png" class="ot point">
+            <img src="images/projects/breakfast-1.png" class="pi in" alt="young boy picture" title="young boy picture">
+        </a>
+    </div>
+<!--image 2-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-2.png" class="ot point">
+            <img src="images/projects/breakfast-2.png" class="pi in" alt="chewing food image" title="chewing food image">
+        </a>
+    </div>
+<!--image 3-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-3.png" class="ot point">
+            <img src="images/projects/breakfast-3.png" class="pi in" alt="baby portait photography" title="baby portrait photography">
+        </a>
+    </div>
+<!--image 4-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-4.png" class="ot point">
+            <img src="images/projects/breakfast-4.png" class="pi in" alt="child high five photo" title="child high five photo">
+        </a>
+    </div>
+<!--image 5-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-5.png" class="ot point">
+            <img src="images/projects/breakfast-5.png" class="pi in" alt="young boy picture" title="young boy picture">
+        </a>
+    </div>
+<!--image 6-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-6.png" class="ot point">
+            <img src="images/projects/breakfast-6.png" class="pi in" alt="suprised child image" title="suprised child image">
+        </a>
+    </div>
+<!--image 7-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/breakfast-7.png" class="ot point">
+            <img src="images/projects/breakfast-7.png" class="pi in" alt="baby portait photography" title="baby portrait photography">
+        </a>
+    </div>
+<!--footer-->
+    <div class="box1 vb1 ct mt">
+					<div class="btn in o">
+						<a href="idrive.php" class="point wt" title="Press LEFT on keyboard">
+							<p class="c">< Last Project - iDrive Autohaus</p>
+						</a>
+					</div>
+                    <div class="btn in o">
+						<a href="passauto.php" class="point wt" title="Press RIGHT on keyboard">
+							<p class="c">Next Project - Pass Auto Sales ></p>
+						</a>
+					</div>
+                </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>

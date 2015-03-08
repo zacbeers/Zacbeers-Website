@@ -1,64 +1,52 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-    <style>
-        html, body {
-            overflow: hidden;
+<?php $title = 'Campfire - Animation'; require_once 'includes/modules/header.php'; ?>
+<!--keyboard navigation-->
+<script>
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            window.location.href = 'ferret.php';
         }
-        #header {
-            top: -120;
+        else if(event.keyCode == 39) {
+            window.location.href = 'lilly.php';
         }
-    </style>
-	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'vertical',
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2'],
-			    navigation: {
-			    	'position': 'right',
-                    'bulletsColor': '#fff',
-			   		'tooltips': ['video', 'see more']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-                    var url = window.location.href; 
-                    if (url.indexOf("page2") > -1) {
-                        window.location.replace("videos-after.php");
-                    }
-			    }
-			});
-	    });
-    </script>
-	<div id="pagepiling">
-	    <div class="section wood ct" id="section1">
-            <div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="title bt wt">campfire animation</p>
-                <p class="wt">blender</p>
-            </div>
-            <div class="box3 in ct">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/S__bu-bptQM?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section3">
-            <div class="box1 ct">
-                <div class="box3 vb1 in">
-                    <p class="title2 bt wt lt">see more work:</p>
-                </div>
-            </div>
-            <?php include_once 'includes/modules/work-buttons.php'; ?>
-        </div>
+    });
+</script>
+<!--content-->
+<div class="dg ct">
+<!--image 1-->
+    <div class="box2 ct in mt4">
+        <p class="title bt wt"><?php echo $title; ?></p>
     </div>
+    <div class="box3 in ct mt">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/S__bu-bptQM?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+<!--image 2-->
+    <div class="box2 ct in mt">
+        <p class="wt">Made in <a href="http://blender.org" target="_blank" class="ot tl point">Blender</a></p>
+    </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/campfire-1.png" class="ot point">
+            <img src="images/projects/campfire-1.png" class="pi in" alt="work in progress" title="work in progress">
+        </a>
+    </div>
+<!--image 3-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/campfire-2.gif" class="ot point">
+            <img src="images/projects/campfire-2.gif" class="pi in" alt="low poly loop" title="low poly loop">
+        </a>
+    </div>
+<!--footer-->
+    <div class="box1 vb1 ct mt">
+					<div class="btn in o">
+						<a href="ferret.php" class="point wt" title="Press LEFT on keyboard">
+							<p class="c">< Last Project - Ferret</p>
+						</a>
+					</div>
+                    <div class="btn in o">
+						<a href="lilly.php" class="point wt" title="Press RIGHT on keyboard">
+							<p class="c">Next Project - Lilly ></p>
+						</a>
+					</div>
+                </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>

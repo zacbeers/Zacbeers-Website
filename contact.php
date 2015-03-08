@@ -62,7 +62,7 @@ require_once 'core/init.php'; ?>
         </script>
     </head>
 
-    <body class="wood">
+    <body class="dg">
 <!--header-->
         <div class="header box1 ct w" id="header">
             <div class="box2 in">
@@ -71,7 +71,7 @@ require_once 'core/init.php'; ?>
                 </a>
 <!--navigation-->
                 <ul class="fullnav va r">
-                    <li class="tl l"><a href="index.php?page=work" class="ot point">work</a></li>
+                    <li class="tl l"><a href="work.php" class="ot point">work</a></li>
                     <li class="tl l"><a href="resume.pdf" class="ot point">resume</a></li>
                     <li class="tl l"><a href="contact.php" class="ot point">contact</a></li>
                     <li class="l">
@@ -98,6 +98,7 @@ require_once 'core/init.php'; ?>
             </div>
         </div>
 <div class="box1 ct contact" id="contact">
+    <!--using margins with the current stand-alone header causes problems, top margins can only be used on pages that have the module version header. The stand alone must be used on this page to avoid multiple http headers sent by the contact script TLDR: leave these boxes alone-->
     <div class="box1 ct"></div>
     <div class="box1 ct"></div>
     <?php if(Input::exists()) {
@@ -150,16 +151,16 @@ require_once 'core/init.php'; ?>
                 <div class="box1 ct">
                     <div class="field eighth in">
                         <label for="name" class="wt b">name</label>
-                        <input type="text" id="name" name="name" placeholder="Jane Doe" value="Jane Doe">
+                        <input type="text" id="name" name="name" placeholder="name">
                     </div>
                     <div class="field eighth in">
                         <label for="email" class="wt b">email</label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com" value="example@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="email">
                     </div>
                 </div>
                 <div class="field half in">
                     <label for="message" class="wt b">message</label>
-                    <textarea id="message" name="message" placeholder="write me something..." value="write me something..."></textarea>
+                    <textarea id="message" name="message" placeholder="message"></textarea>
                 </div>
                 <div class="field half in">
                     <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">

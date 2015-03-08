@@ -1,31 +1,24 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
+<?php $title = 'Design'; require_once 'includes/modules/header.php'; ?>
 <div class="box1 ct" id="design">
-    <div class="box1 ct v1"></div>
-    <div class="box1 ct v1"></div>
-    <div class="box1 ct">
-        <p class="title2 bt wt">design</p>
+    <div class="box1 ct mt4">
+        <p class="title2 bt wt"><?php echo $title; ?></p>
     </div>
     <div class="box2 in ct">
-        <div class="box2 in">
+        <div class="box2 in mt ct">
             <a href="lilly.php">
-                <img src="images/projects/design-10.png" class="pc l wt point" alt="lilly physical therapy logo design" title="lilly physical therapy logo design">
+                <img src="images/projects/design-10.png" class="in pc wt point" alt="lilly physical therapy logo design" title="lilly physical therapy logo design">
             </a>
+        </div>
+        <div class="box2 in mt">
             <a href="familyphysicaltherapy.php">
                 <img src="images/projects/design-9.png" class="pc r wt point" alt="family physical therapy web design" title="family physical therapy web design">
             </a>
-        </div>
-        <div class="box1"></div>
-        <div class="box2 in">
             <a href="fnimanager.php">
                 <img src="images/projects/design-8.png" class="pc l wt point" alt="fni manager website development" title="fni manager website development">
             </a>
-            <a href="myfnimanager.php">
-                <img src="images/projects/design-7.png" class="pc r wt point" alt="my fni manager web development" title="my fni manager web development">
-            </a>
         </div>
-        <div class="box1"></div>
-        <div class="box2 in">
+        <div class="box2 in mt">
             <a href="uscarzz.php">
                 <img src="images/projects/design-6.png" class="pc l wt point" alt="uscarzz website development" title="uscarzz website development">
             </a>
@@ -33,8 +26,7 @@
                 <img src="images/projects/design-5.png" class="pc r wt point" alt="car dealership software web design" title="car dealership software web design">
             </a>
         </div>
-        <div class="box1"></div>
-        <div class="box2 in">
+        <div class="box2 in mt">
             <a href="idrive.php">
                 <img src="images/projects/design-4.png" class="pc l wt point" alt="idrive autohaus website and logo design" title="idrive autohaus website and logo design">
             </a>
@@ -42,8 +34,7 @@
                 <img src="images/projects/design-3.png" class="pc r wt point" alt="pass auto sales web and logo design" title="pass auto sales web and logo design">
             </a>
         </div>
-        <div class="box1"></div>
-        <div class="box2 in">
+        <div class="box2 in mt">
             <a href="camtrucks.php">
                 <img src="images/projects/design-2.png" class="pc l wt point" alt="cam trucks website design" title="cam trucks website design">
             </a>
@@ -63,5 +54,3 @@
     </div>
     <?php include_once 'includes/modules/work-buttons.php'; ?>
 </div>
-<!--footer-->
-<?php include_once 'includes/modules/footer.php'; ?>

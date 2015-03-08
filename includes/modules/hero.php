@@ -5,7 +5,7 @@
         </div>
         <div class="half l">
             <div class="half r circle cb">
-                <img src="images/profile.jpg" class="box1">
+                <img src="images/profile.png" class="box1">
             </div>
         </div>
     </div>

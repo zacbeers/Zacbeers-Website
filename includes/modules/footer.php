@@ -1,23 +1,9 @@
-<div class="box1 ct mt1">
-    <div class="box1 vb2">
-        <ul class="in">
-            <li class="nd l">
-                <a href="work.php" class="wt point">work</a>
-            </li>
-            <li class="nd l">
-                <a href="labs.php" class="wt point">labs</a>
-            </li>
-            <li class="nd l">
-                <a href="resume.php" class="wt point">resume</a>
-            </li>
-            <li class="nd l">
-                <a href="contact.php" class="wt point">contact</a>
-            </li>
-        </ul>
-    </div>
-    <div class="box1 vb1">
-        <a class="ot l nd point" href="https://github.com/zacbeers/Zacbeers-Website">source code</a>
-        <a class="ot l nd point" href="sitemap.xml">sitemap</a>
-        <p class="wt l nd">copyright <?php echo date("Y"); ?></p>
+<div class="box1 ct wood">
+    <div class="box1">
+	<ul class="c in ct">
+            <li class="nd in"><a class="wt tl nd point" href="https://github.com/zacbeers/Zacbeers-Website">source code</a></li>
+            <li class="nd in"><a class="wt tl nd point" href="sitemap.xml">sitemap</a></li>
+            <li class="nd box1"><p class="wt ct nd">copyright <?php echo date("Y"); ?></p></li>
+	</ul>
     </div>
 </div>

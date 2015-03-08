@@ -1,78 +1,71 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-    <style>
-        html, body {
-            overflow: hidden;
+<?php $title = 'Lilly Physical Therapy - Rebranding'; require_once 'includes/modules/header.php'; ?>
+<!--keyboard navigation-->
+<script>
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            window.location.href = 'campfire.php';
         }
-        #header {
-            top: -120;
+        else if(event.keyCode == 39) {
+            window.location.href = 'familyphysicaltherapy.php';
         }
-    </style>
-	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'vertical',
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3'],
-			    navigation: {
-			    	'position': 'right',
-                    'bulletsColor': '#fff',
-			   		'tooltips': ['image 1', 'image 2', 'see more']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-                    var url = window.location.href; 
-                    if (url.indexOf("page3") > -1) {
-                        window.location.replace("design-after.php");
-                    }
-			    }
-			});
-	    });
-    </script>
-	<div id="pagepiling">
-	    <div class="section wood ct" id="section1">
-            <div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="title bt wt">lilly pt</p>
-                <p class="wt">logo design</p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-10-1.png" class="ot point">
-                    <img src="images/projects/design-10-1.png" class="pi in" alt="lilly physical therapy final logo design" title="lilly physical therapy final logo design">
-                </a>
-                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section2">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt">The design went through many different stages before completion. In the end they decided they liked both the first and third designs. The final version was designed to be a mix of both directions. At one point there was a plan to animate the logos, you can click the following links to see what these looked like: <a href="images/projects/design-10-2.gif" class="ot point"> animation1</a>, <a href="images/projects/design-10-3.gif" class="ot point"> animation 2</a>, &amp; <a href="images/projects/design-10-4.gif" class="ot point"> animation 3</a></p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-10-2.png" class="ot point" alt="lilly physical therapy logo design process" title="lilly physicl therapy logo design process">
-                    <img src="images/projects/design-10-2.png" class="pi in">
-                </a>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section3">
-            <div class="box1 ct">
-                <div class="box3 vb1 in">
-                    <p class="title2 bt wt lt">see more work:</p>
-                </div>
-            </div>
-            <?php include_once 'includes/modules/work-buttons.php'; ?>
-        </div>
+    });
+</script>
+<!--content-->
+<div class="dg ct">
+<!--image 1-->
+    <div class="box2 ct in mt4">
+        <p class="title bt wt"><?php echo $title; ?></p>
+        <p class="wt">The design went through many different stages before completion.</p>
     </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/lilly-1.png" class="ot point">
+            <img src="images/projects/lilly-1.png" class="pi in" alt="lilly physical therapy final logo design" title="lilly physical therapy final logo design">
+        </a>
+    </div>
+<!--image 2-->
+    <div class="box3 ct in mt">
+        <p class="wt">We also played with the idea of animating the logos, this helped to define the personality of the brand better than one static image. These were the three motion graphics I came up with. </p>
+    </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/lilly-5.gif" class="ot point" alt="lilly physical therapy logo design process" title="lilly physical therapy logo design process">
+            <img src="images/projects/lilly-2.gif" class="pi in">
+        </a>
+    </div>
+<!--image 3-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/lilly-6.gif" class="ot point" alt="lilly physical therapy logo design process" title="lilly physical therapy logo design process">
+            <img src="images/projects/lilly-3.gif" class="pi in">
+        </a>
+    </div>
+<!--image 4-->
+
+    <div class="box3 in ct mt">
+        <a href="images/projects/lilly-7.gif" class="ot point" alt="lilly physical therapy logo design process" title="lilly physical therapy logo design process">
+            <img src="images/projects/lilly-4.gif" class="pi in">
+        </a>
+    </div>
+<!--image 5-->
+    <div class="box3 ct in mt">
+        <p class="wt">In the end they decided they liked both the first and third designs. The final version was designed to be a mix of both directions.</p>
+    </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/lilly-8.png" class="ot point" alt="lilly physical therapy final logo design" title="lilly physical therapy final logo design">
+            <img src="images/projects/lilly-8.png" class="pi in">
+        </a>
+    </div>
+<!--footer-->
+    <div class="box1 vb1 ct mt">
+					<div class="btn in o">
+						<a href="campfire.php" class="point wt" title="Press LEFT on keyboard">
+							<p class="c">< Last Project - Campfire</p>
+						</a>
+					</div>
+                    <div class="btn in o">
+						<a href="familyphysicaltherapy.php" class="point wt" title="Press RIGHT on keyboard">
+							<p class="c">Next Project - Family Physical Therapy ></p>
+						</a>
+					</div>
+                </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>

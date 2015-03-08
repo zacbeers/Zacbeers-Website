@@ -23,6 +23,7 @@ blockquote {
 }
 ul, li {
     list-style: none;
+    padding: 0px;
 }
 
 /*layout*/
@@ -149,10 +150,12 @@ div {
     bottom: 10%;
 }
 .btn/*button*/ {
-    width: 160px;
+    min-width: 160px;
     height: 60px;
     text-align:center;
     line-height: 60px;
+    padding: 0px 16px;
+    margin: 32px;
 }
 .btn a {
     width: 100%;
@@ -163,13 +166,13 @@ div {
 }
 .co/*companies*/ {
     margin: 0px 10px;
+    text-decoration: none!important;
 }
 .circle {
     border-radius: 50%;
     background-size: cover;
-    background: #fff;
     overflow: hidden;
-    border: 6px solid #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 /*colors & textures*/
 .wood {
@@ -178,22 +181,25 @@ div {
 }
 .cover {
     background: #3286c6;
-    background-image: url('../images/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     min-height: 100%;
-    margin-top: -40px;
+    -webkit-animation:  color-swap 30s infinite alternate;
+    -moz-animation:  color-swap 30s infinite alternate;
+    -o-animation:  color-swap 30s infinite alternate;
+    animation:  color-swap 30s infinite alternate;
 }
 .cover-2 {
     background-image: url('../images/cover-1.png');
     background-size: cover;
     background-position: right center;
+    z-index: 999;
 }
 .contact {
     background-image: url('../images/cover-2.png');
     background-size: cover;
-    background position: center center;
+    background-position: center center!important;
 }
 .w/*white*/ { 
     background: #fff;
@@ -210,6 +216,12 @@ div {
 .bluet/*blue text*/ {
     color: #3286c6;
 }
+.dg/*dark gray*/ {
+	background: #252525;
+}
+.dgt/*dar gray text*/ {
+	color: #252525;
+}
 /*forms*/
 .field {
 margin-bottom: 20px;
@@ -222,6 +234,13 @@ input {
 }
 textarea, input{
     width: 100%;
+}
+label {
+	opacity: 0;
+}
+
+input:focus  label {
+	opacity: 1!important;
 }
 
 /*navigation*/
@@ -239,6 +258,9 @@ textarea, input{
 }
 
 /*extras*/
+.zin {
+    z-index: 999;   
+}
 .title {
     font-size: 180%;
 }
@@ -276,6 +298,17 @@ textarea, input{
 }
 .zacbeers {
     text-decoration: none!important;
+	background: #fff!important;
+	background-color: #fff!important;
+	-webkit-animation:  color-swap-text 30s infinite alternate;
+    -moz-animation:     color-swap-text 30s infinite alternate;
+    -o-animation:       color-swap-text 30s infinite alternate;
+    animation:          color-swap-text 30s infinite alternate;
+	
+}
+.news {
+    background: #F1F1F1;
+    position: relative;
 }
 .arrow-down {
 	width: 0; 
@@ -293,27 +326,96 @@ textarea, input{
     -o-animation:       pulse 3s infinite alternate;
     animation:          pulse 3s infinite alternate;
 }
-.arrow-down1 {
-	width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 24px solid #fff;
-    border-radius: 50%;
-    position: absolute;
-    right:4%;
-    bottom: 10%;
-    -webkit-animation:  pulse1 5s infinite alternate;
-    -moz-animation:     pulse1 5s infinite alternate;
-    -o-animation:       pulse1 5s infinite alternate;
-    animation:          pulse1 5s infinite alternate;
-}
-.guy {
-    -webkit-animation:  guy 3s infinite alternate;
-    -moz-animation:     guy 3s infinite alternate;
-    -o-animation:       guy 3s infinite alternate;
-    animation:          guy 3s infinite alternate;
-}
+
+@-webkit-keyframes color-swap {
+        0% {
+            background: #3286c6;
+        }
+        50% {
+            background: #ff6347;
+        }
+	100% {
+	    background: #3286c6;
+	}
+    }
+    @-moz-keyframes color-swap {
+        0% {
+            background: #3286c6;
+        }
+        50% {
+            background: #ff6347;
+        }
+	100% {
+	    background: #3286c6;
+	}
+    }
+    @-o-keyframes color-swap {
+        0% {
+            background: #3286c6;
+        }
+        50% {
+            background: #ff6347;
+        }
+	100% {
+	    background: #3286c6;
+	}
+    }
+    @keyframes color-swap {
+        0% {
+            background: #3286c6;
+        }
+        50% {
+            background: #ff6347;
+        }
+	100% {
+	    background: #3286c6;
+	}
+    }
+	@-webkit-keyframes color-swap-text {
+        0% {
+            color: #3286c6;
+        }
+        50% {
+            color: #ff6347;
+        }
+	100% {
+	    color: #3286c6;
+	}
+    }
+	@-moz-keyframes color-swap-text {
+        0% {
+            color: #3286c6;
+        }
+        50% {
+            color: #ff6347;
+        }
+	100% {
+	    color: #3286c6;
+	}
+    }
+	@-o-keyframes color-swap-text {
+        0% {
+            color: #3286c6;
+        }
+        50% {
+            color: #ff6347;
+        }
+	100% {
+	    color: #3286c6;
+	}
+    }
+	@keyframes color-swap-text {
+        0% {
+            color: #3286c6;
+        }
+        50% {
+            color: #ff6347;
+        }
+	100% {
+	    color: #3286c6;
+	}
+    }
+
 @-webkit-keyframes pulse1 {
     0% {
         transform: scale(0.8,0.8);
@@ -479,8 +581,14 @@ textarea, input{
         bottom: 80px;
         margin-bottom: 0px;
     }
+	. section {
+		position: relative!important;
+	}
 }
 @media screen and (max-width: 900px) {
+    .news {
+        height: 50px!important;
+    }
     .point{
     text-decoration: underline;
     }
@@ -496,6 +604,33 @@ textarea, input{
     }
     .cover {
         background-size: 120%;
+    }
+    .field {
+        display: block!important;
+        clear: both;
+        width: 100%!important;
+    }
+    .field .btn {
+        margin: 32px 0px;
+    }
+    #landing p.title2 {
+        margin-top: 50px;
+    }
+    
+    .arrow-down1 {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 24px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        right:4%;
+        bottom: 10%;
+        -webkit-animation:  pulse1 5s infinite alternate;
+        -moz-animation:     pulse1 5s infinite alternate;
+        -o-animation:       pulse1 5s infinite alternate;
+        animation:          pulse1 5s infinite alternate;
     }
 }
 @media screen and (max-width: 800px) {
@@ -580,7 +715,6 @@ textarea, input{
     .header {
         top: 0px!important;
         position: fixed;
-        opacity: 0.9;
     }
     /*disable show hide animations*/
     @-webkit-keyframes show {
@@ -647,4 +781,6 @@ textarea, input{
             opacity: inherit;
         }
     }
+
+    
 }

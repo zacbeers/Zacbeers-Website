@@ -1,64 +1,30 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-<div class="box1 ct" id="illustration">
-    <div class="box1 ct"></div>
-    <div class="box1 ct"></div>
-    <div class="box1 ct">
-        <p class="title2 bt wt">illustration</p>
+<?php $title = 'Illustration'; require_once 'includes/modules/header.php'; ?>
+<div class="box1 ct" id="websites">
+    <div class="box1 ct mt4">
+        <p class="title2 bt wt"><?php echo $title; ?></p>
     </div>
-    <div class="box2 in ct">
-        <div class="box2 in">
+    <div class="box1 ct mt">
+        <a class="tl ot point" href="animation.php">Animation</a><a class="tl ot point" href="websites.php">Websites</a><a class="tl wt point" href="illustration.php">Illustration</a><a class="tl ot point" href="branding.php">Branding</a><a class="tl ot point" href="videos.php">Videos</a><a class="tl ot point" href="photography.php">Photography</a>
+    </div>
+        <div class="box2 in mt">
             <a href="ferret.php">
-                <img src="images/projects/illustration-8.png" class="pc l wt point" alt="punk ferret illustration" title="punk ferret illustration">
-            </a>
-            <a href="rotoscope.php">
-                <img src="images/projects/illustration-7.png" class="pc r wt point" alt="animated music video for andrew huang" title="animated music video for andrew huang">
-            </a>
-        </div>
-    </div>
-    <div class="box1 ct"></div>
-    <div class="box2 in ct">
-        <div class="box2 in">
-            <a href="colorblock.php">
-                <img src="images/projects/illustration-6.png" class="pc l wt point" alt="color block daily illustration challenge" title="color block daily illustration challenge">
+                <img src="images/projects/covers/ferret-cover.png" class="pc l wt point" alt="Ferret - Illustration" title="Ferret - Illustration">
             </a>
             <a href="nitw.php">
-                <img src="images/projects/illustration-5.png" class="pc r wt point" alt="night in the woods game fan art" title="night in the woods game fan art">
+                <img src="images/projects/covers/nitw-cover.png" class="pc r wt point" alt="Night in the Woods - illustration" title="Night in the Woods - illustration">
             </a>
         </div>
     </div>
-    <div class="box1 ct"></div>
-    <div class="box2 in ct">
-        <div class="box2 in">
-            <a href="travel.php">
-                <img src="images/projects/illustration-4.png" class="pc l wt point" alt="personal travel related artwork" title="personal travel related artwork">
-            </a>
-            <a href="soldout.php">
-                <img src="images/projects/illustration-3.png" class="pc r wt point" alt="sold out personal illustration" title="sold out personal illustration">
-            </a>
-        </div>
-    </div>
-    <div class="box1 ct"></div>
-    <div class="box2 in ct">
-        <div class="box2 in">
-            <a href="indecent.php">
-                <img src="images/projects/illustration-2.png" class="pc l wt point" alt="promotional art for the indecent band" title="promotional art for the indecent band">
-            </a>
-            <a href="anatomy.php">
-                <img src="images/projects/illustration-1.png" class="pc r wt point" alt="personal anatomy illustration practice" title="personal anatomy illustration practice">
-            </a>
-        </div>
-    </div>
-    <div class="box1 ct"></div>
 </div>
-<!--work-buttons-->
-<div class="box1 ct" id="end">
+<!--work-buttons full page-->
+<div class="box1 ct fs cover-2 mt4 zin">
+    <div class="box1 ct vb1"></div>
+    <div class="box1 ct vb2"></div>
     <div class="box1 ct">
         <div class="box3 vb1 in">
-            <p class="title2 bt wt lt">see more work:</p>
+            <p class="title2 bt wt lt">be specific:</p>
         </div>
     </div>
     <?php include_once 'includes/modules/work-buttons.php'; ?>
 </div>
-<!--footer-->
-<?php include_once 'includes/modules/footer.php'; ?>

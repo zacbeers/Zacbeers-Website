@@ -1,64 +1,44 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-    <style>
-        html, body {
-            overflow: hidden;
+<?php $title = 'Sleepy - Animation'; require_once 'includes/modules/header.php'; ?>
+<!--keyboard navigation-->
+<script>
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            window.location.href = 'passauto.php';
         }
-        #header {
-            top: -120;
+        else if(event.keyCode == 39) {
+            window.location.href = 'camtrucks.php';
         }
-    </style>
-	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'vertical',
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2'],
-			    navigation: {
-			    	'position': 'right',
-                    'bulletsColor': '#fff',
-			   		'tooltips': ['video', 'see more']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-                    var url = window.location.href; 
-                    if (url.indexOf("page2") > -1) {
-                        window.location.replace("videos-after.php");
-                    }
-			    }
-			});
-	    });
-    </script>
-	<div id="pagepiling">
-	    <div class="section wood ct" id="section1">
-            <div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="title bt wt">sleepy</p>
-                <p class="wt">personal animation</p>
-            </div>
-            <div class="box3 in ct">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/YK0za-Hh0y4?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section2">
-            <div class="box1 ct">
-                <div class="box3 vb1 in">
-                    <p class="title2 bt wt lt">see more work:</p>
-                </div>
-            </div>
-            <?php include_once 'includes/modules/work-buttons.php'; ?>
-        </div>
+    });
+</script>
+<!--content-->
+<div class="dg ct">
+<!--image 1-->
+    <div class="box2 ct in mt4">
+        <p class="title bt wt"><?php echo $title; ?></p>
+        <p class="wt">Personal Project</p>
     </div>
+    <div class="box3 in ct mt">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/YK0za-Hh0y4?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+<!--image 2
+    <div class="box3 in ct mt">
+        <a href="images/projects/sleepy-1.png" class="ot point">
+            <img src="images/projects/sleepy-1.png" class="pi in" alt="sleepy animation still" title="sleepy animation still">
+        </a>
+    </div>-->
+<!--footer-->
+    <div class="box1 vb1 ct mt">
+					<div class="btn in o">
+						<a href="passauto.php" class="point wt" title="Press LEFT on keyboard">
+							<p class="c">< Last Project - Pass Auto Sales</p>
+						</a>
+					</div>
+                    <div class="btn in o">
+						<a href="camtrucks.php" class="point wt" title="Press RIGHT on keyboard">
+							<p class="c">Next Project - Cam Trucks ></p>
+						</a>
+					</div>
+                </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>

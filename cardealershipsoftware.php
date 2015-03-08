@@ -1,138 +1,76 @@
 <!--header-->
-<?php require_once 'includes/modules/header.php'; ?>
-    <style>
-        html, body {
-            overflow: hidden;
+<?php $title = 'Car Dealership Software - Web Design'; require_once 'includes/modules/header.php'; ?>
+<!--keyboard navigation-->
+<script>
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            window.location.href = 'uscarzz.php';
         }
-        #header {
-            top: -120;
+        else if(event.keyCode == 39) {
+            window.location.href = '25steps.php';
         }
-    </style>
-	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'vertical',
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
-			    navigation: {
-			    	'position': 'right',
-                    'bulletsColor': '#fff',
-			   		'tooltips': ['image 1', 'image 2', 'image 3', 'image 4', 'image 5', 'image 6', 'image 7', 'see more']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-                    var url = window.location.href; 
-                    if (url.indexOf("page8") > -1) {
-                        window.location.replace("design-after.php");
-                    }
-			    }
-			});
-	    });
-    </script>
-	<div id="pagepiling">
-	    <div class="section wood ct" id="section1">
-            <div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="title bt wt">car dealership software</p>
-                <p class="wt">web design</p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-1.png" class="ot point">
-                    <img src="images/projects/design-5-1.png" class="pi in" alt="car dealership software final web design" title="car dealership software final web design">
-                </a>
-                <?php include_once 'includes/modules/arrow-down-small.php'; ?>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section2">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt">this website was designed as a promotional piece to spread the word about <a href="http://dealerclick.com/" class="ot point">Dealerclick Software</a>.</p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-2.png" class="ot point">
-                    <img src="images/projects/design-5-2.png" class="pi in" alt="car dealership software mobile friendly responsive website" title="car dealership software mobile friendly responsive website">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section3">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt"></p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-3.png" class="ot point">
-                    <img src="images/projects/design-5-3.png" class="pi in" alt="car dealership software about us page example" title="car dealership software about us page example">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section4">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt"></p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-4.png" class="ot point">
-                    <img src="images/projects/design-5-4.png" class="pi in" alt="car dealership software about us page example" title="car dealership software about us page example">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section5">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt"></p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-5.png" class="ot point">
-                    <img src="images/projects/design-5-5.png" class="pi in" alt="car dealership software testimonials page design" title="car dealership software testimonials page design">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section6">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt"></p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-6.png" class="ot point">
-                    <img src="images/projects/design-5-6.png" class="pi in" alt="car dealership software web design" title="car dealership software web design">
-                </a>
-            </div>
-	    </div>
-        <div class="section wood ct" id="section7">
-	    	<div class="box1 ct"></div>
-            <div class="box1 ct"></div>
-            <div class="box2 ct in">
-                <p class="wt"></p>
-            </div>
-            <div class="box3 in ct">
-                <a href="images/projects/design-5-7.png" class="ot point">
-                    <img src="images/projects/design-5-7.png" class="pi in" alt="car dealership software web design" title="car dealership software web design">
-                </a>
-            </div>
-	    </div>
-	    <div class="section wood ct" id="section8">
-            <div class="box1 ct">
-                <div class="box3 vb1 in">
-                    <p class="title2 bt wt lt">see more work:</p>
-                </div>
-            </div>
-            <?php include_once 'includes/modules/work-buttons.php'; ?>
-        </div>
+    });
+</script>
+<!--content-->
+<div class="dg ct">
+<!--image 1-->
+    <div class="box2 ct in mt4">
+        <p class="title bt wt"><?php echo $title; ?></p>
+        <p class="wt">This website was designed as a promotional piece to spread the word about Dealerclick Software.</p>
     </div>
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-1.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-1.png" class="pi in" alt="car dealership software final web design" title="car dealership software final web design">
+        </a>
+    </div>
+<!--image 2-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-2.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-2.png" class="pi in" alt="car dealership software mobile friendly responsive website" title="car dealership software mobile friendly responsive website">
+        </a>
+    </div>
+<!--image 3-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-3.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-3.png" class="pi in" alt="car dealership software about us page example" title="car dealership software about us page example">
+        </a>
+    </div>
+<!--image 4-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-4.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-4.png" class="pi in" alt="car dealership software about us page example" title="car dealership software about us page example">
+        </a>
+    </div>
+<!--image 5-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-5.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-5.png" class="pi in" alt="car dealership software testimonials page design" title="car dealership software testimonials page design">
+        </a>
+    </div>
+<!--image 6-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-6.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-6.png" class="pi in" alt="car dealership software web design" title="car dealership software web design">
+        </a>
+    </div>
+<!--image 7-->
+    <div class="box3 in ct mt">
+        <a href="images/projects/cardealershipsoftware-7.png" class="ot point">
+            <img src="images/projects/cardealershipsoftware-7.png" class="pi in" alt="car dealership software web design" title="car dealership software web design">
+        </a>
+    </div>
+<!--footer-->
+    <div class="box1 vb1 ct mt">
+					<div class="btn in o">
+						<a href="uscarzz.php" class="point wt" title="Press LEFT on keyboard">
+							<p class="c">< Last Project - USCarzz</p>
+						</a>
+					</div>
+                    <div class="btn in o">
+						<a href="25steps.php" class="point wt" title="Press RIGHT on keyboard">
+							<p class="c">Next Project - 25 Steps ></p>
+						</a>
+					</div>
+                </div>
+    <?php include_once 'includes/modules/work-buttons.php'; ?>
+</div>
