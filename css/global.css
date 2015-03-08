@@ -185,10 +185,11 @@ div {
     background-size: cover;
     background-position: 50% 100%;
     min-height: 100%;
-    -webkit-animation:  color-swap 30s infinite alternate;
-    -moz-animation:  color-swap 30s infinite alternate;
-    -o-animation:  color-swap 30s infinite alternate;
-    animation:  color-swap 30s infinite alternate;
+	background: #46286e;
+    /*-webkit-animation:  color-swap 30s infinite alternate;*/
+    /*-moz-animation:  color-swap 30s infinite alternate;*/
+    /*-o-animation:  color-swap 30s infinite alternate;*/
+    /*animation:  color-swap 30s infinite alternate;*/
 }
 .cover-2 {
     background-image: url('../images/cover-1.png');
@@ -208,10 +209,10 @@ div {
     color: #fff;
 }
 .o/*orange*/ {
-    background: #ff6347;
+    background: #46286e /*#ff6347*/;
 }
 .ot/*orange text*/ {
-    color: #ff6347;
+    color: #46286e /*#ff6347*/;
 }
 .bluet/*blue text*/ {
     color: #3286c6;
@@ -300,10 +301,11 @@ input:focus  label {
     text-decoration: none!important;
 	background: #fff!important;
 	background-color: #fff!important;
-	-webkit-animation:  color-swap-text 30s infinite alternate;
-    -moz-animation:     color-swap-text 30s infinite alternate;
-    -o-animation:       color-swap-text 30s infinite alternate;
-    animation:          color-swap-text 30s infinite alternate;
+	color: #46286e;
+	/*-webkit-animation:  color-swap-text 30s infinite alternate;*/
+   /* -moz-animation:     color-swap-text 30s infinite alternate;*/
+    /*-o-animation:       color-swap-text 30s infinite alternate;*/
+    /*animation:          color-swap-text 30s infinite alternate;*/
 	
 }
 .news {
