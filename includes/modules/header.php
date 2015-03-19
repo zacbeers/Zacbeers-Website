@@ -5,7 +5,7 @@ else {echo "Zac Beers";} ?></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="hi, my name is Zac Beers. i'm a web designer, illustrator, & animator.">
-        <meta name="keywords" content="web design,illustration,animation,photography,zac beers,orage county,los angeles">
+        <meta name="keywords" content="web design,illustration,animation,photography,zac beers,orange county,los angeles">
         <meta name="author" content="Zac Beers">
         
         <link rel="shortcut icon" href="http://zacbeers.com/images/icons/favicon.ico"/>

@@ -185,7 +185,7 @@ require_once 'core/init.php'; ?>
                 </div>
                 <div class="field half in">
                     <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-                    <input type="submit" class="btn c ct in o point wt nb" value="send">
+                    <input type="submit" class="smlbtn c ct in o point wt nb" value="send">
                 </div>
             </form>
         </div>
