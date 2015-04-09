@@ -91,28 +91,28 @@ require_once 'core/init.php'; ?>
                 </a>
 <!--navigation-->
                 <ul class="fullnav va r">
-                    <li class="tl l"><a href="http://zacbeers.com/work.php" class="ot point">work</a></li>
-                    <li class="tl l"><a href="http://zacbeers.com/labs.php" class="ot point">labs</a></li>
-                    <li class="tl l"><a href="http://zacbeers.com/resume.pdf" target="_blank" class="ot point">resume</a></li>
-                    <li class="tl l"><a href="http://zacbeers.com/contact.php" class="ot point">contact</a></li>
+                    <li class="tl l"><a href="http://zacbeers.com/work.php" class="zacbeers point">work</a></li>
+                    <li class="tl l"><a href="http://zacbeers.com/labs.php" class="zacbeers point">labs</a></li>
+                    <li class="tl l"><a href="http://zacbeers.com/about.php" class="zacbeers point">about</a></li>
+                    <li class="tl l"><a href="http://zacbeers.com/contact.php" class="zacbeers point">contact</a></li>
                     <li class="l">
-                        <a href="http://www.zacbeers.tumblr.com/" target="_blank" class="point sm">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/social-tumblr.png" alt="follow zac beers on tumblr" title="tumblr">
+                        <a href="https://www.behance.net/ZacBeers/" target="_blank" class="point sm">
+                            <img class="ot sm" src="http://zacbeers.com/images/icons/behance.png" alt="follow zac beers on behance" title="behance">
                         </a>
                     </li>
                     <li class="l">
-                        <a href="https://twitter.com/ZacBeers/" target="_blank" class="point">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/social-twitter.png" alt="follow zac beers on twitter" title="twitter">
+                        <a href="https://ello.co/zacbeers" target="_blank" class="point">
+                            <img class="ot sm" src="http://zacbeers.com/images/icons/ello.png" alt="follow zac beers on ello" title="ello">
                         </a>
                     </li>
                     <li class="l">
-                        <a href="https://www.behance.net/ZacBeers/" target="_blank" class="point">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/social-behance.png" alt="follow zac beers on behance" title="behance">
+                        <a href="https://twitter.com/ZacBeers" target="_blank" class="point">
+                            <img class="ot sm" src="http://zacbeers.com/images/icons/twitter.png" alt="follow zac beers on twitter" title="twitter">
                         </a>
                     </li>
                     <li class="l">
-                        <a href="http://www.linkedin.com/pub/zac-beers/" target="_blank" class="point">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/social-linkedin.png" alt="follow zac beers on linkedin" title="linkedin">
+                        <a href="https://www.youtube.com/channel/UCxGi-weMM9kwY_wJHm64LYg/featured" target="_blank" class="point">
+                            <img class="ot sm" src="http://zacbeers.com/images/icons/youtube.png" alt="follow zac beers on youtube" title="youtube">
                         </a>
                     </li>
                 </ul>

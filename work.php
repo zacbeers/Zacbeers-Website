@@ -27,8 +27,11 @@
         </ul>
     </div>
     <div class="box2 in ct mt2">
+        <a href="becreative.php">
+            <img src="images/projects/covers/becreative-cover.png" class="l pc wt point" alt="BeCreative360 - Web Design" title="BeCreative360 - Web Design">
+        </a>
         <a href="latenights.php">
-            <img src="images/projects/covers/latenights-cover.png" class="in pc wt point" alt="Late Nights with Trav &amp; Los - Animation" title="Late Nights with Trav &amp; Los - Animation">
+            <img src="images/projects/covers/latenights-cover.png" class="r pc wt point" alt="Late Nights with Trav &amp; Los - Animation" title="Late Nights with Trav &amp; Los - Animation">
         </a>
         </div>
     <div class="box2 in ct mt">

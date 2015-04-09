@@ -189,23 +189,20 @@ div {
 }
 .cover {
     background: #3286c6;
+    background-image: url('../images/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     min-height: 100%;
-    -webkit-animation:  color-swap 30s infinite alternate;
-    -moz-animation:  color-swap 30s infinite alternate;
-    -o-animation:  color-swap 30s infinite alternate;
-    animation:  color-swap 30s infinite alternate;
 }
 .cover-2 {
-    background-image: url('../images/cover-1.png');
+    background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: right center;
     z-index: 999;
 }
 .contact {
-    background-image: url('../images/cover-2.png');
+    background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center center!important;
 }
@@ -261,8 +258,6 @@ input:focus  label {
     height: 32px;
     margin: 14px 5px;
     text-decoration: none;
-    background-image: url('../images/icons/social.jpg');
-    background-size: 200%;
 }
 
 /*extras*/
@@ -308,7 +303,7 @@ input:focus  label {
     text-decoration: none!important;
 	background: #fff!important;
 	background-color: #fff!important;
-	color: #3286c6;
+	color: #2D5C7B;
 	-webkit-animation:  color-swap-text 30s infinite alternate;
    -moz-animation:     color-swap-text 30s infinite alternate;
     -o-animation:       color-swap-text 30s infinite alternate;
@@ -338,90 +333,90 @@ input:focus  label {
 
 @-webkit-keyframes color-swap {
         0% {
-            background: #3286c6;
+            background: #2D5C7B;
         }
         50% {
             background: #ff6347;
         }
 	100% {
-	    background: #3286c6;
+	    background: #2D5C7B;
 	}
     }
     @-moz-keyframes color-swap {
         0% {
-            background: #3286c6;
+            background: #2D5C7B;
         }
         50% {
             background: #ff6347;
         }
 	100% {
-	    background: #3286c6;
+	    background: #2D5C7B;
 	}
     }
     @-o-keyframes color-swap {
         0% {
-            background: #3286c6;
+            background: #2D5C7B;
         }
         50% {
             background: #ff6347;
         }
 	100% {
-	    background: #3286c6;
+	    background: #2D5C7B;
 	}
     }
     @keyframes color-swap {
         0% {
-            background: #3286c6;
+            background: #2D5C7B;
         }
         50% {
             background: #ff6347;
         }
 	100% {
-	    background: #3286c6;
+	    background: #2D5C7B;
 	}
     }
 	@-webkit-keyframes color-swap-text {
         0% {
-            color: #3286c6;
+            color: #2D5C7B;
         }
         50% {
             color: #ff6347;
         }
 	100% {
-	    color: #3286c6;
+	    color: #2D5C7B;
 	}
     }
 	@-moz-keyframes color-swap-text {
         0% {
-            color: #3286c6;
+            color: #2D5C7B;
         }
         50% {
             color: #ff6347;
         }
 	100% {
-	    color: #3286c6;
+	    color: #2D5C7B;
 	}
     }
 	@-o-keyframes color-swap-text {
         0% {
-            color: #3286c6;
+            color: #2D5C7B;
         }
         50% {
             color: #ff6347;
         }
 	100% {
-	    color: #3286c6;
+	    color: #2D5C7B;
 	}
     }
 	@keyframes color-swap-text {
         0% {
-            color: #3286c6;
+            color: #2D5C7B;
         }
         50% {
             color: #ff6347;
         }
 	100% {
-	    color: #3286c6;
+	    color: #2D5C7B;
 	}
     }
 
@@ -670,6 +665,13 @@ input:focus  label {
     .btn, .fullnav{
         font-weight: 700;
         font-size: 150%;
+    }
+    .fullnav li.tl a.ot {
+	color: #3286c6!important;
+	-webkit-animation:  color-swap-text 30s infinite alternate!important;
+        -moz-animation:     color-swap-text 30s infinite alternate!important;
+        -o-animation:       color-swap-text 30s infinite alternate!important;
+        animation:          color-swap-text 30s infinite alternate!important;
     }
     .cover {
         min-height: 40px;

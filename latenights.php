@@ -4,7 +4,7 @@
 <script>
     document.addEventListener('keydown', function(event) {
         if(event.keyCode == 37) {
-            window.location.href = 'work.php';
+            window.location.href = 'becreative.php';
         }
         else if(event.keyCode == 39) {
             window.location.href = 'november.php';
@@ -36,8 +36,8 @@
 <!--footer-->
     <div class="box1 vb1 ct mt">
 					<div class="btn in o">
-						<a href="work.php" class="point wt" title="press LEFT on keyboard">
-							<p class="c">< Back to All Projects</p>
+						<a href="becreative.php" class="point wt" title="press LEFT on keyboard">
+							<p class="c">< Last Project - BeCreative360</p>
 						</a>
 					</div>
                     <div class="btn in o">

@@ -72,7 +72,7 @@ else {echo "Zac Beers";} ?></title>
 
     <body class="dg">
 <!--header-->
-        <div class="header box1 ct w" id="header">
+        <div class="header box1 ct w" id="header" style="max-height: 60px;">
             <!-- 
             <a href="http://news.zacbeers.com">
                 <div class="box1 in wt section news point">
@@ -90,40 +90,20 @@ else {echo "Zac Beers";} ?></title>
     </svg> &nbsp; Updates are all done!</p>
                     </div>
                 </a>-->
-                <div style="box-sizing: border-box; padding: 0px 20px;" class="in">
+                <div style="box-sizing: border-box; padding: 5px 20px;line-height: 100%;" class="in">
                     <p id="close-notification" class="wt r">&nbsp;</p>
                 </div>
-                <div class="box2 in">
-                    <a href="http://www.zacbeers.com/" class="point zacbeers">
+                <div class="half l" style="margin-left: 10%;">
+                    <a href="http://www.zacbeers.com/" class="point zacbeers" style="">
                         <p class="title bt ot va l zacbeers" style="background: #fff!important;">Zac Beers</p>
                 </a>
 <!--navigation-->
-                <ul class="fullnav va r">
-                    <li class="tl l"><a href="http://zacbeers.com/work.php" class="zacbeers point">work</a></li>
-                    <li class="tl l"><a href="http://zacbeers.com/labs.php" class="zacbeers point">labs</a></li>
-                    <li class="tl l"><a href="http://zacbeers.com/about.php" class="zacbeers point">about</a></li>
-                    <li class="tl l"><a href="http://zacbeers.com/contact.php" class="zacbeers point">contact</a></li>
-                    <li class="l">
-                        <a href="https://www.behance.net/ZacBeers/" target="_blank" class="point sm">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/behance.png" alt="follow zac beers on behance" title="behance">
-                        </a>
-                    </li>
-                    <li class="l">
-                        <a href="https://ello.co/zacbeers" target="_blank" class="point">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/ello.png" alt="follow zac beers on ello" title="ello">
-                        </a>
-                    </li>
-                    <li class="l">
-                        <a href="https://twitter.com/ZacBeers" target="_blank" class="point">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/twitter.png" alt="follow zac beers on twitter" title="twitter">
-                        </a>
-                    </li>
-                    <li class="l">
-                        <a href="https://www.youtube.com/channel/UCxGi-weMM9kwY_wJHm64LYg/featured" target="_blank" class="point">
-                            <img class="ot sm" src="http://zacbeers.com/images/icons/youtube.png" alt="follow zac beers on youtube" title="youtube">
-                        </a>
-                    </li>
-                </ul>
+                
             </div>
+            <div class="btn r o cover" style="margin: 0px;">
+				    <a href="start.php" class="point wt">
+				        <p class="c">Start a Project</p>
+				    </a>
+				</div>
         </div>
 <?php date_default_timezone_set( "America/Los_Angeles" ); ?>

@@ -16,11 +16,13 @@
   <loc>http://zacbeers.com/labs.php</loc>
 </url>
 <url>
-  <loc>http://zacbeers.com/resume.pdf</loc>
-  <lastmod>2014-11-26T12:12:01+00:00</lastmod>
+  <loc>http://zacbeers.com/about.php</loc>
 </url>
 <url>
   <loc>http://zacbeers.com/contact.php</loc>
+</url>
+<url>
+  <loc>http://zacbeers.com/becreative.php</loc>
 </url>
 <url>
   <loc>http://zacbeers.com/latenights.php</loc>
@@ -30,9 +32,6 @@
 </url>
 <url>
   <loc>http://zacbeers.com/everynightidreamofdancing.php</loc>
-</url>
-<url>
-  <loc>http://zacbeers.com/ferret.php</loc>
 </url>
 <url>
   <loc>http://zacbeers.com/mininav.php</loc>
@@ -57,6 +56,9 @@
 </url>
 <url>
   <loc>http://zacbeers.com/photography.php</loc>
+</url>
+<url>
+  <loc>http://zacbeers.com/ferret.php</loc>
 </url>
 <url>
   <loc>http://zacbeers.com/campfire.php</loc>
@@ -116,6 +118,7 @@
   <loc>http://zacbeers.com/coldmorning.php</loc>
 </url>
 <url>
-  <loc>http://zacbeers.com/index.php?page=home</loc>
+  <loc>http://zacbeers.com/resume.pdf</loc>
+  <lastmod>2015-04-01T17:25:51+00:00</lastmod>
 </url>
 </urlset>

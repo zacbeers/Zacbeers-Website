@@ -8,8 +8,13 @@
         <a class="tl ot point" href="animation.php">Animation</a><a class="tl wt point" href="websites.php">Websites</a><a class="tl ot point" href="illustration.php">Illustration</a><a class="tl ot point" href="branding">Branding</a><a class="tl ot point" href="videos.php">Videos</a><a class="tl ot point" href="photography.php">Photography</a>
     </div>
         <div class="box2 in mt">
+            <a href="becreative.php">
+                <img src="images/projects/covers/becreative-cover.png" class="pc in wt point" alt="BeCreative360 - Web Design" title="BeCreative360 - Web Design">
+            </a>
+        </div>
+        <div class="box2 in mt">
             <a href="familyphysicaltherapy.php">
-                <img src="images/projects/covers/familyphysicaltherapy-cover.png" class="pc l wt point" alt="Family Physical Therapy - website" title="Family Physical Therapy - Website">
+                <img src="images/projects/covers/familyphysicaltherapy-cover.png" class="pc l wt point" alt="Family Physical Therapy - Website" title="Family Physical Therapy - Website">
             </a>
             <a href="fnimanager.php">
                 <img src="images/projects/covers/fnimanager-cover.png" class="pc r wt point" alt="Fni Manager - Website" title="Fni Manager - Website">
