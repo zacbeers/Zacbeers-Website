@@ -1,1 +1,0 @@
-<div class="arrow-down1" id="arrow-down"></div>

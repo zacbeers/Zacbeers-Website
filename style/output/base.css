@@ -1,0 +1,96 @@
+/*colors*/
+/*fonts*/
+/*easing*/
+/* line 20, ../input/base.scss */
+::selection, ::-moz-selection {
+  background: #666666;
+  color: #222222;
+}
+
+/* line 25, ../input/base.scss */
+body {
+  background: #222222;
+  color: #666666;
+  cursor: default;
+  font-family: "Lato", sans-serif;
+  margin: 0em;
+}
+
+/* line 33, ../input/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  margin: 0em 0.2em;
+}
+
+/* line 39, ../input/base.scss */
+h3 {
+  color: #333333;
+}
+
+/* line 43, ../input/base.scss */
+a {
+  color: tomato;
+  cursor: pointer;
+  margin: 0em 0.3em;
+  text-decoration: none;
+  outline-color: #ea8439;
+}
+
+/* line 50, ../input/base.scss */
+a:hover {
+  color: #f7484e;
+  text-decoration: underline;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* line 55, ../input/base.scss */
+button, input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"], textarea, input[type="submit"] {
+  background: #222222;
+  border: 0.1em solid #666666;
+  color: #666666;
+  cursor: pointer;
+  outline-color: #ea8439;
+  padding: 0.4em 1.2em;
+}
+
+/* line 63, ../input/base.scss */
+button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
+  background: #666666;
+  color: #222222;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* line 68, ../input/base.scss */
+.large {
+  color: #666666;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 110%;
+  padding: 0.6em 1.2em;
+}
+
+/* line 74, ../input/base.scss */
+i {
+  display: inline-block;
+  height: 3em;
+  margin: -1.1em 0em;
+  width: 3em;
+}
+
+/* line 80, ../input/base.scss */
+i.dl {
+  background: url("images/icons/download.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* line 84, ../input/base.scss */
+i.gh {
+  background: url("images/icons/git.png") no-repeat center center;
+  background-size: cover;
+}

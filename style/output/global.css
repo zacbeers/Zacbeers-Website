@@ -1,0 +1,336 @@
+/*colors*/
+/*fonts*/
+/*easing*/
+/* line 20, ../input/base.scss */
+::selection, ::-moz-selection {
+  background: #666666;
+  color: #222222;
+}
+
+/* line 25, ../input/base.scss */
+body {
+  background: #222222;
+  color: #666666;
+  cursor: default;
+  font-family: "Lato", sans-serif;
+  margin: 0em;
+}
+
+/* line 33, ../input/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  margin: 0em 0.2em;
+}
+
+/* line 39, ../input/base.scss */
+h3 {
+  color: #333333;
+}
+
+/* line 43, ../input/base.scss */
+a {
+  color: tomato;
+  cursor: pointer;
+  margin: 0em 0.3em;
+  text-decoration: none;
+  outline-color: #ea8439;
+}
+
+/* line 50, ../input/base.scss */
+a:hover {
+  color: #f7484e;
+  text-decoration: underline;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* line 55, ../input/base.scss */
+button, input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"], textarea, input[type="submit"] {
+  background: #222222;
+  border: 0.1em solid #666666;
+  color: #666666;
+  cursor: pointer;
+  outline-color: #ea8439;
+  padding: 0.4em 1.2em;
+}
+
+/* line 63, ../input/base.scss */
+button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
+  background: #666666;
+  color: #222222;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* line 68, ../input/base.scss */
+.large {
+  color: #666666;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 110%;
+  padding: 0.6em 1.2em;
+}
+
+/* line 74, ../input/base.scss */
+i {
+  display: inline-block;
+  height: 3em;
+  margin: -1.1em 0em;
+  width: 3em;
+}
+
+/* line 80, ../input/base.scss */
+i.dl {
+  background: url("images/icons/download.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* line 84, ../input/base.scss */
+i.gh {
+  background: url("images/icons/git.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* line 1, ../input/layout.scss */
+header {
+  box-sizing: border-box;
+  display: block;
+  height: 4.2em;
+  left: 0em;
+  opacity: 0.3;
+  padding: 1em;
+  top: 0em;
+  width: 100%;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+/* line 12, ../input/layout.scss */
+header:hover {
+  opacity: 1;
+}
+/* line 16, ../input/layout.scss */
+header a {
+  display: inline-block;
+  float: left;
+}
+/* line 21, ../input/layout.scss */
+header .breadcrumbs {
+  line-height: 2.5em;
+}
+/* line 25, ../input/layout.scss */
+header h1 {
+  color: #666666;
+  display: inline-block;
+  float: left;
+  font-weight: normal;
+}
+/* line 32, ../input/layout.scss */
+header svg {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  right: 1.2em;
+  top: 1.2em;
+  z-index: 997;
+}
+
+/* line 42, ../input/layout.scss */
+nav {
+  background: #333333;
+  box-shadow: -0.1vw 0vw 1vw black;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 1em 1em 1em 3em;
+  position: fixed;
+  right: -20em;
+  top: 0em;
+  width: auto;
+  z-index: 999;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+/* line 56, ../input/layout.scss */
+nav svg {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  margin: 0.2em 0.2em;
+  position: relative;
+}
+/* line 64, ../input/layout.scss */
+nav ul {
+  display: block;
+  clear: both;
+}
+/* line 67, ../input/layout.scss */
+nav ul li {
+  display: block;
+  text-align: right;
+}
+/* line 70, ../input/layout.scss */
+nav ul li a {
+  color: #666666;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+}
+/* line 76, ../input/layout.scss */
+nav ul li a:hover {
+  color: tomato;
+}
+/* line 82, ../input/layout.scss */
+nav.opened {
+  right: 0em;
+}
+
+/* line 87, ../input/layout.scss */
+#menuGhost {
+  display: block;
+  height: 100vh;
+  position: fixed;
+  right: 100%;
+  top: 0%;
+  width: 100vw;
+  z-index: 998;
+}
+/* line 96, ../input/layout.scss */
+#menuGhost.opened {
+  right: 0%;
+}
+
+/* line 101, ../input/layout.scss */
+article, nav ul {
+  margin: 6em 0em;
+}
+
+/* line 105, ../input/layout.scss */
+.edit {
+  height: 15em;
+}
+
+/* line 109, ../input/layout.scss */
+.field {
+  margin: 1em 0em;
+}
+/* line 112, ../input/layout.scss */
+.field p {
+  margin: 2em 0em 0em 0em;
+}
+/* line 116, ../input/layout.scss */
+.field img {
+  display: block;
+}
+
+/* line 121, ../input/layout.scss */
+section {
+  text-align: center;
+}
+/* line 124, ../input/layout.scss */
+section div {
+  background-color: #fff;
+  background-size: cover!important;
+  cursor: pointer;
+  display: inline-block;
+  height: 24vw;
+  position: relative;
+}
+/* line 132, ../input/layout.scss */
+section div::before {
+  content: '';
+  box-shadow: 0vw 1.1vw 1vw #000;
+  display: block;
+  height: 70%;
+  left: 10%;
+  position: absolute;
+  top: 26%;
+  width: 80%;
+  z-index: -1;
+}
+/* line 144, ../input/layout.scss */
+section div p {
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  height: 100%;
+  line-height: 24vw;
+  margin: 0em;
+  opacity: 0;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+/* line 156, ../input/layout.scss */
+section div p:hover {
+  opacity: 1;
+}
+/* line 163, ../input/layout.scss */
+section img::before {
+  content: '';
+  box-shadow: 0vw 1.1vw 1vw #000;
+  display: block;
+  height: 70%;
+  left: 10%;
+  position: absolute;
+  top: 26%;
+  width: 80%;
+  z-index: -1;
+}
+/* line 176, ../input/layout.scss */
+section p {
+  width: 50vw;
+  margin: 3em auto;
+}
+/* line 181, ../input/layout.scss */
+section .rect {
+  background: tomato;
+  margin: 2vw;
+  width: 40vw;
+}
+/* line 187, ../input/layout.scss */
+section .square {
+  background: #f7484e;
+  margin: 3vw;
+  width: 24vw;
+}
+
+/* line 194, ../input/layout.scss */
+footer {
+  background: #111111;
+  bottom: 0%;
+  box-sizing: border-box;
+  left: 0%;
+  opacity: 0.3;
+  padding: 0em 0em 0.3em 0em;
+  position: fixed;
+  width: 100%;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+/* line 205, ../input/layout.scss */
+footer:hover {
+  opacity: 1;
+}
+/* line 209, ../input/layout.scss */
+footer p {
+  padding: 0em;
+  margin: 0em;
+}
+/* line 214, ../input/layout.scss */
+footer span {
+  margin: 0em 0.3em;
+}

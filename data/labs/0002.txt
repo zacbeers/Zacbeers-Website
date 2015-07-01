@@ -1,0 +1,2 @@
+tr 808 samples mapped to numpad keys for easy sequencing%n<iframe height='477' scrolling='no' src='//codepen.io/zacbeers/embed/bdBgYq/?height=477&theme-id=16395&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/zacbeers/pen/bdBgYq/'>Drum Kit</a> by Zac Beers (<a href='http://codepen.io/zacbeers'>@zacbeers</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
