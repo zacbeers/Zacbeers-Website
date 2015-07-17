@@ -44,7 +44,7 @@ else {echo "Zac Beers";} ?></title>
         <div id="menuGhost"></div>
         <header>
             <?php if(isset($page) && isset($id)){ 
-                    echo "<a href='portfolio.php'><button><&nbsp;&nbsp;&nbsp;portfolio</button></a>";
+                    echo "<a href='", $page, ".php'><button><&nbsp;&nbsp;&nbsp;", $page, "</button></a>";
                 } else if(isset($page)) {
                     echo "<a href='index.php'><button><&nbsp;&nbsp;&nbsp;", $page, "</button></a>";
              } else {
