@@ -41,30 +41,34 @@ body {
   top: 0em;
   z-index: -2;
   width: 100%;
+  -webkit-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1.4s;
+  -moz-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1.4s;
+  -o-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1.4s;
+  transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1.4s;
 }
 
-/* line 60, ../input/base.scss */
+/* line 61, ../input/base.scss */
 #shadow.open {
   opacity: 1;
 }
 
-/* line 64, ../input/base.scss */
+/* line 65, ../input/base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0em 0.2em;
 }
 
-/* line 68, ../input/base.scss */
+/* line 69, ../input/base.scss */
 h2 {
   font-size: 150%;
   line-height: 3em;
 }
 
-/* line 73, ../input/base.scss */
+/* line 74, ../input/base.scss */
 h3 {
   color: #333333;
 }
 
-/* line 77, ../input/base.scss */
+/* line 78, ../input/base.scss */
 a {
   color: #dd4a35;
   cursor: pointer;
@@ -73,7 +77,7 @@ a {
   outline-color: #ea8439;
 }
 
-/* line 84, ../input/base.scss */
+/* line 85, ../input/base.scss */
 a:hover {
   color: #f7484e;
   -webkit-transition: all ease-in-out 0.25s;
@@ -82,23 +86,23 @@ a:hover {
   transition: all ease-in-out 0.25s;
 }
 
-/* line 89, ../input/base.scss */
+/* line 90, ../input/base.scss */
 .field {
   display: block;
   margin: 1em auto;
   min-width: 200px;
   width: 40%;
 }
-/* line 95, ../input/base.scss */
+/* line 96, ../input/base.scss */
 .field p {
   margin: 2em 0em 0em 0em;
 }
-/* line 99, ../input/base.scss */
+/* line 100, ../input/base.scss */
 .field img {
   display: block;
 }
 
-/* line 104, ../input/base.scss */
+/* line 105, ../input/base.scss */
 input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"], textarea {
   background: none transparent;
   border: 0.1em solid #666666;
@@ -114,7 +118,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="che
   transition: all ease-in-out 0.25s;
 }
 
-/* line 116, ../input/base.scss */
+/* line 117, ../input/base.scss */
 input[type="submit"], button {
   background: none transparent;
   border: 0.1em solid #666666;
@@ -129,13 +133,13 @@ input[type="submit"], button {
   transition: all ease-in-out 0.25s;
 }
 
-/* line 127, ../input/base.scss */
+/* line 128, ../input/base.scss */
 button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
   background: #666666;
   color: #e9e9e9;
 }
 
-/* line 131, ../input/base.scss */
+/* line 132, ../input/base.scss */
 .large {
   color: #666666;
   font-size: 110%;
@@ -143,7 +147,7 @@ button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type
   padding: 0.6em 1.2em;
 }
 
-/* line 137, ../input/base.scss */
+/* line 138, ../input/base.scss */
 i {
   display: inline-block;
   height: 3em;
@@ -151,13 +155,13 @@ i {
   width: 3em;
 }
 
-/* line 143, ../input/base.scss */
+/* line 144, ../input/base.scss */
 i.dl {
   background: url("images/icons/download.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 147, ../input/base.scss */
+/* line 148, ../input/base.scss */
 i.gh {
   background: url("images/icons/git.png") no-repeat center center;
   background-size: cover;
@@ -511,16 +515,21 @@ section .square {
 }
 
 /* line 288, ../input/layout.scss */
+#recentwork {
+  padding-top: 4.4em;
+}
+
+/* line 292, ../input/layout.scss */
 .elevated {
   left: 7.5%;
   position: fixed;
 }
-/* line 291, ../input/layout.scss */
+/* line 295, ../input/layout.scss */
 .elevated::before {
   opacity: 0;
 }
 
-/* line 296, ../input/layout.scss */
+/* line 300, ../input/layout.scss */
 .hide {
   background: #e9e9e9;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWU5ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -546,7 +555,7 @@ section .square {
   z-index: 992;
 }
 
-/* line 314, ../input/layout.scss */
+/* line 318, ../input/layout.scss */
 .profile {
   background: url("../../images/profile.png") no-repeat center center/cover;
   border-radius: 5em;
@@ -556,7 +565,7 @@ section .square {
   width: 10em;
 }
 @media screen and (max-width: 720px) {
-  /* line 314, ../input/layout.scss */
+  /* line 318, ../input/layout.scss */
   .profile {
     display: block;
     float: none;
@@ -566,12 +575,12 @@ section .square {
   }
 }
 
-/* line 330, ../input/layout.scss */
+/* line 334, ../input/layout.scss */
 .ctanav {
   margin-bottom: 3em;
 }
 
-/* line 334, ../input/layout.scss */
+/* line 338, ../input/layout.scss */
 footer {
   background: rgba(255, 255, 255, 0.9);
   bottom: 0%;
@@ -581,16 +590,16 @@ footer {
   position: relative;
   width: 100%;
 }
-/* line 343, ../input/layout.scss */
+/* line 347, ../input/layout.scss */
 footer:hover {
   background: white;
 }
-/* line 347, ../input/layout.scss */
+/* line 351, ../input/layout.scss */
 footer p {
   padding: 0em;
   margin: 0em;
 }
-/* line 352, ../input/layout.scss */
+/* line 356, ../input/layout.scss */
 footer span {
   margin: 0em 0.3em;
 }
@@ -616,10 +625,10 @@ footer span {
   opacity: 0;
   position: relative;
   width: 1.5em;
-  -webkit-transition: all ease-in-out 0.4s;
-  -moz-transition: all ease-in-out 0.4s;
-  -o-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 1.4s;
+  -moz-transition: all ease-in-out 1.4s;
+  -o-transition: all ease-in-out 1.4s;
+  transition: all ease-in-out 1.4s;
 }
 /* line 23, ../input/module.scss */
 #mouse::before {
@@ -690,6 +699,10 @@ footer span {
   z-index: 1;
 }
 /* line 92, ../input/module.scss */
+.block a {
+  color: white !important;
+}
+/* line 96, ../input/module.scss */
 .block::before {
   background: #ea8439;
   content: '';
@@ -702,7 +715,7 @@ footer span {
   width: 85vw;
   z-index: 2;
 }
-/* line 105, ../input/module.scss */
+/* line 109, ../input/module.scss */
 .block::after {
   background: #e9e9e9;
   border: 4em solid #e9e9e9;
@@ -717,7 +730,7 @@ footer span {
   z-index: 3;
 }
 
-/* line 121, ../input/module.scss */
+/* line 125, ../input/module.scss */
 .block.opening::after {
   margin-left: 93vw;
   width: 0em;
@@ -727,7 +740,7 @@ footer span {
   transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
 }
 
-/* line 129, ../input/module.scss */
+/* line 133, ../input/module.scss */
 .block.open::before {
   margin-left: 85vw;
   width: 0em;
@@ -737,12 +750,12 @@ footer span {
   transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
 }
 
-/* line 137, ../input/module.scss */
+/* line 141, ../input/module.scss */
 .block.opened::before {
   display: none;
   opacity: 0;
 }
-/* line 141, ../input/module.scss */
+/* line 145, ../input/module.scss */
 .block.opened::after {
   display: none;
   opacity: 0;

@@ -11,13 +11,14 @@ $p = 0;
 $l = 0;
 $b = 0;
 ?>
-<script src="scripts/intro.js"></script>
 <div class="block">
     <div class="middle">
-        <div class="profile"></div><p><h1>I'm a web developer and digital designer</h1></p>
+        <a href="about.php"><div class="profile"></div>
+        <p><h1>I'm a web developer and digital designer</h1></p></a>
     </div>
     <script src="scripts/mouse.js"></script>
-    <span class="mouse-container"><m id="mouse"></m></span>
+    <script src="scripts/target.js"></script>
+<a href="#recentwork"><span class="mouse-container"><m id="mouse"></m></span></a>
 </div>
         <article>
             <?php
@@ -25,7 +26,7 @@ $b = 0;
                 echo 'no projects';
             } else {
                 ?>
-                <section>
+                <section id="recentwork">
                     <h2>Recent Work</h2>
                 <?php
                 foreach($projects->results() as $project) {

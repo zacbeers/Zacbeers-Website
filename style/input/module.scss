@@ -18,7 +18,7 @@
     opacity: 0;
     position: relative;
     width: 1.5em;
-    @include ease-in-out(0.4s);
+    @include ease-in-out(1.4s);
     
     &::before {
         content: '';
@@ -88,6 +88,10 @@
     position: relative;
     width: 85vw;
     z-index: 1;
+   
+    a {
+        color: $white!important;
+    }
     
     &::before {
     background: #ea8439;

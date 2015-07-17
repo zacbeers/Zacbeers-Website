@@ -13,6 +13,7 @@ else {echo "Zac Beers";} ?></title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!--my stuff-->
         <link rel="stylesheet" type="text/css" href="style/output/global.css">
+        <script src="scripts/intro.js"></script>
         <script src="scripts/toggles.js"></script>
     </head>
     <body>
