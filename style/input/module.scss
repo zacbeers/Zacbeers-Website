@@ -1,3 +1,4 @@
+//scroll
 .mouse-container {
     display: block;
     height: 3em;
@@ -9,26 +10,29 @@
 }
 
 #mouse {
-  border: 0.2em solid #eee;
-  border-radius: 1.5em;
-  display: block;
-  height: 3em;
-  margin: 0px auto;
-  position: relative;
-  width: 1.5em;
-  &::before {
-    content: '';
+    border: 0.2em solid #eee;
+    border-radius: 1.5em;
     display: block;
-    width: 0.2em;
-    height: 0.2em;
-    border-radius: 0.2em;
-    background: #eee;
-    opacity: 1;
-    position: absolute;
-    left: 0.65em;
-    top: 0.4em;
-    @include ease-in-out(0.2s);
-  }
+    height: 3em;
+    margin: 0px auto;
+    opacity: 0;
+    position: relative;
+    width: 1.5em;
+    @include ease-in-out(0.4s);
+    
+    &::before {
+        content: '';
+        display: block;
+        width: 0.2em;
+        height: 0.2em;
+        border-radius: 0.2em;
+        background: #eee;
+        opacity: 1;
+        position: absolute;
+        left: 0.65em;
+        top: 0.4em;
+        @include ease-in(0.2s);
+    }
 }
 
 .scrolling {
@@ -66,4 +70,76 @@
     opacity: 1!important;
     top: 0.4em!important;
   }
+}
+
+.display {
+  opacity: 1!important;  
+}
+
+//intro
+.block {
+    background: $tomato;
+    box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.5);
+    color: $white;
+    cursor: auto;
+    display: block;
+    margin: 0em auto;
+    height: 80vh;
+    position: relative;
+    width: 85vw;
+    z-index: 1;
+    
+    &::before {
+    background: #ea8439;
+    content: '';
+    display: block;
+    height: 80vh;
+    left: 0em;
+    margin-left: 0vw;
+    position: absolute;
+    top: 0em;
+    width: 85vw;
+    z-index: 2;
+  }
+  
+  &::after {
+    background: $offWhite;;
+    border: 4em solid $offWhite;;
+    content: '';
+    display: block;
+    height: 80vh;
+    left: -4em;
+    margin-left: 0vw;
+    position: absolute;
+    top: -1em;
+    width: 85vw;
+    z-index: 3;
+  }
+}
+
+.block.opening{
+  &::after {
+    margin-left: 93vw;
+    width: 0em;
+    @include ease-in(1s);
+  }
+}
+
+.block.open{
+  &::before {
+    margin-left: 85vw;
+    width: 0em;
+    @include ease-in(1s);
+  }
+}
+
+.block.opened {
+    &::before {
+        display: none;
+        opacity: 0;
+    }
+    &::after {
+        display: none;
+        opacity: 0;
+    }
 }

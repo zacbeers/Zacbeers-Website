@@ -36,29 +36,35 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4db5b4b4', endColorstr='#00b5b4b4',GradientType=0 );
   /* IE6-8 */
   height: 100%;
+  opacity: 0;
   position: fixed;
   top: 0em;
   z-index: -2;
   width: 100%;
 }
 
-/* line 59, ../input/base.scss */
+/* line 60, ../input/base.scss */
+#shadow.open {
+  opacity: 1;
+}
+
+/* line 64, ../input/base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0em 0.2em;
 }
 
-/* line 63, ../input/base.scss */
+/* line 68, ../input/base.scss */
 h2 {
   font-size: 150%;
   line-height: 3em;
 }
 
-/* line 68, ../input/base.scss */
+/* line 73, ../input/base.scss */
 h3 {
   color: #333333;
 }
 
-/* line 72, ../input/base.scss */
+/* line 77, ../input/base.scss */
 a {
   color: #dd4a35;
   cursor: pointer;
@@ -67,32 +73,32 @@ a {
   outline-color: #ea8439;
 }
 
-/* line 79, ../input/base.scss */
+/* line 84, ../input/base.scss */
 a:hover {
   color: #f7484e;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in-out 0.25s;
+  -moz-transition: all ease-in-out 0.25s;
+  -o-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
 }
 
-/* line 84, ../input/base.scss */
+/* line 89, ../input/base.scss */
 .field {
   display: block;
   margin: 1em auto;
   min-width: 200px;
   width: 40%;
 }
-/* line 90, ../input/base.scss */
+/* line 95, ../input/base.scss */
 .field p {
   margin: 2em 0em 0em 0em;
 }
-/* line 94, ../input/base.scss */
+/* line 99, ../input/base.scss */
 .field img {
   display: block;
 }
 
-/* line 99, ../input/base.scss */
+/* line 104, ../input/base.scss */
 input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"], textarea {
   background: none transparent;
   border: 0.1em solid #666666;
@@ -104,7 +110,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="che
   width: 100%;
 }
 
-/* line 110, ../input/base.scss */
+/* line 115, ../input/base.scss */
 input[type="submit"], button {
   background: none transparent;
   border: 0.1em solid #666666;
@@ -115,17 +121,17 @@ input[type="submit"], button {
   padding: 0.4em 1.2em;
 }
 
-/* line 120, ../input/base.scss */
+/* line 125, ../input/base.scss */
 button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
   background: #666666;
   color: #e9e9e9;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in-out 0.25s;
+  -moz-transition: all ease-in-out 0.25s;
+  -o-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
 }
 
-/* line 125, ../input/base.scss */
+/* line 130, ../input/base.scss */
 .large {
   color: #666666;
   font-size: 110%;
@@ -133,7 +139,7 @@ button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type
   padding: 0.6em 1.2em;
 }
 
-/* line 131, ../input/base.scss */
+/* line 136, ../input/base.scss */
 i {
   display: inline-block;
   height: 3em;
@@ -141,13 +147,13 @@ i {
   width: 3em;
 }
 
-/* line 137, ../input/base.scss */
+/* line 142, ../input/base.scss */
 i.dl {
   background: url("images/icons/download.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 141, ../input/base.scss */
+/* line 146, ../input/base.scss */
 i.gh {
   background: url("images/icons/git.png") no-repeat center center;
   background-size: cover;
@@ -165,10 +171,10 @@ header {
   top: 0em;
   width: 100%;
   z-index: 995;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.4s;
+  -moz-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.4s;
+  -o-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.4s;
+  transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.4s;
 }
 /* line 14, ../input/layout.scss */
 header:hover {
@@ -200,10 +206,10 @@ header #openNav {
   right: 1.6em;
   top: 1.3em;
   z-index: 997;
-  -webkit-transition: all ease-in 0.15s;
-  -moz-transition: all ease-in 0.15s;
-  -o-transition: all ease-in 0.15s;
-  transition: all ease-in 0.15s;
+  -webkit-transition: all ease-in-out 0.15s;
+  -moz-transition: all ease-in-out 0.15s;
+  -o-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
 }
 /* line 45, ../input/layout.scss */
 header #openNav:hover {
@@ -224,19 +230,19 @@ header #menuText {
   top: 1.2em;
   right: 1.5em;
   z-index: 996;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in-out 0.25s;
+  -moz-transition: all ease-in-out 0.25s;
+  -o-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
 }
 
-/* line 69, ../input/layout.scss */
+/* line 68, ../input/layout.scss */
 header:hover > #menuText {
   color: #666666;
   margin: 0em 2.5em;
 }
 
-/* line 74, ../input/layout.scss */
+/* line 73, ../input/layout.scss */
 nav {
   background: white;
   box-shadow: 0.5vw 0vw 1.5vw rgba(0, 0, 0, 0.5);
@@ -249,63 +255,63 @@ nav {
   top: 0em;
   width: auto;
   z-index: 999;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.25s;
+  -moz-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.25s;
+  -o-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.25s;
+  transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.25s;
 }
-/* line 88, ../input/layout.scss */
+/* line 87, ../input/layout.scss */
 nav svg {
   cursor: pointer;
   display: inline-block;
   float: right;
   margin: 0.3em 0.3em;
   position: relative;
-  -webkit-transition: all ease-in 0.15s;
-  -moz-transition: all ease-in 0.15s;
-  -o-transition: all ease-in 0.15s;
-  transition: all ease-in 0.15s;
+  -webkit-transition: all ease-in-out 0.15s;
+  -moz-transition: all ease-in-out 0.15s;
+  -o-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
 }
-/* line 96, ../input/layout.scss */
+/* line 95, ../input/layout.scss */
 nav svg:hover {
   height: 2em;
   margin: 0.2em 0.2em;
   width: 2em;
 }
-/* line 103, ../input/layout.scss */
+/* line 102, ../input/layout.scss */
 nav ul {
   display: block;
   clear: both;
 }
-/* line 106, ../input/layout.scss */
+/* line 105, ../input/layout.scss */
 nav ul li {
   display: block;
   text-align: right;
 }
-/* line 109, ../input/layout.scss */
+/* line 108, ../input/layout.scss */
 nav ul li a {
   border-bottom: 0em solid white;
   color: #666666;
   font-family: "Lato", sans-serif;
   font-size: 150%;
 }
-/* line 115, ../input/layout.scss */
+/* line 114, ../input/layout.scss */
 nav ul li a:hover {
   border-bottom: 0.075em solid #f7484e;
 }
-/* line 121, ../input/layout.scss */
+/* line 120, ../input/layout.scss */
 nav.opened {
   right: 0em;
 }
 @media screen and (max-width: 720px) {
-  /* line 121, ../input/layout.scss */
+  /* line 120, ../input/layout.scss */
   nav.opened {
     width: 70%;
     text-align: center!important;
   }
 }
 
-/* line 130, ../input/layout.scss */
+/* line 129, ../input/layout.scss */
 #menuGhost {
   display: block;
   height: 100vh;
@@ -315,22 +321,22 @@ nav.opened {
   width: 100vw;
   z-index: 998;
 }
-/* line 139, ../input/layout.scss */
+/* line 138, ../input/layout.scss */
 #menuGhost.opened {
   right: 0%;
 }
 
-/* line 144, ../input/layout.scss */
+/* line 143, ../input/layout.scss */
 article, nav ul {
   margin: 6em 0em;
 }
 
-/* line 148, ../input/layout.scss */
+/* line 147, ../input/layout.scss */
 .edit {
   height: 15em;
 }
 
-/* line 152, ../input/layout.scss */
+/* line 151, ../input/layout.scss */
 .middle {
   box-sizing: border-box;
   display: block;
@@ -338,20 +344,20 @@ article, nav ul {
   padding: 2em;
   width: 80%;
 }
-/* line 158, ../input/layout.scss */
+/* line 157, ../input/layout.scss */
 .middle p {
   clear: both;
   display: block;
   margin: 0px auto;
   text-align: center;
 }
-/* line 164, ../input/layout.scss */
+/* line 163, ../input/layout.scss */
 .middle h1 {
   line-height: 4em;
   text-align: center;
 }
 @media screen and (max-width: 720px) {
-  /* line 164, ../input/layout.scss */
+  /* line 163, ../input/layout.scss */
   .middle h1 {
     font-size: 150%;
     line-height: 4em;
@@ -359,7 +365,7 @@ article, nav ul {
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 164, ../input/layout.scss */
+  /* line 163, ../input/layout.scss */
   .middle h1 {
     font-size: 150%;
     line-height: 2em;
@@ -367,12 +373,12 @@ article, nav ul {
   }
 }
 
-/* line 180, ../input/layout.scss */
+/* line 179, ../input/layout.scss */
 section {
   text-align: center;
   min-height: 100vh;
 }
-/* line 184, ../input/layout.scss */
+/* line 183, ../input/layout.scss */
 section div.shadow {
   background-color: #fff;
   background-size: cover!important;
@@ -380,7 +386,7 @@ section div.shadow {
   display: inline-block;
   position: relative;
 }
-/* line 191, ../input/layout.scss */
+/* line 190, ../input/layout.scss */
 section div.shadow::before {
   content: '';
   box-shadow: 0vw 1.1vw 1vw rgba(0, 0, 0, 0.5);
@@ -393,12 +399,12 @@ section div.shadow::before {
   z-index: -1;
 }
 @media screen and (max-width: 1029px) {
-  /* line 184, ../input/layout.scss */
+  /* line 183, ../input/layout.scss */
   section div.shadow {
     margin-bottom: 6em;
   }
 }
-/* line 206, ../input/layout.scss */
+/* line 205, ../input/layout.scss */
 section div.shadow p {
   display: block;
   font-size: 200%;
@@ -410,23 +416,23 @@ section div.shadow p {
   overflow: hidden;
   vertical-align: middle;
   width: 100%;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in-out 0.25s;
+  -moz-transition: all ease-in-out 0.25s;
+  -o-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
 }
-/* line 218, ../input/layout.scss */
+/* line 217, ../input/layout.scss */
 section div.shadow p:hover {
   opacity: 1;
 }
 @media screen and (max-width: 1375px) and (min-width: 1030px) {
-  /* line 206, ../input/layout.scss */
+  /* line 205, ../input/layout.scss */
   section div.shadow p {
     font-size: 150%;
   }
 }
 @media screen and (max-width: 1029px) {
-  /* line 206, ../input/layout.scss */
+  /* line 205, ../input/layout.scss */
   section div.shadow p {
     font-size: 100%;
     line-height: 1em;
@@ -439,13 +445,13 @@ section div.shadow p:hover {
     background: none transparent!important;
   }
 }
-/* line 238, ../input/layout.scss */
+/* line 237, ../input/layout.scss */
 section img {
   display: block;
   max-width: 100%;
   margin: 0em auto;
 }
-/* line 242, ../input/layout.scss */
+/* line 241, ../input/layout.scss */
 section img::before {
   content: '';
   box-shadow: 0vw 1.1vw 1vw #000;
@@ -457,19 +463,19 @@ section img::before {
   width: 80%;
   z-index: -1;
 }
-/* line 255, ../input/layout.scss */
+/* line 254, ../input/layout.scss */
 section p {
   margin: 3em auto;
   width: 50vw;
 }
 @media screen and (max-width: 720px) {
-  /* line 255, ../input/layout.scss */
+  /* line 254, ../input/layout.scss */
   section p {
     margin: 1em auto;
     width: 80vw;
   }
 }
-/* line 264, ../input/layout.scss */
+/* line 263, ../input/layout.scss */
 section .rect {
   background: #dd4a35;
   height: 24vw;
@@ -477,14 +483,14 @@ section .rect {
   width: 40vw;
 }
 @media screen and (max-width: 720px) {
-  /* line 264, ../input/layout.scss */
+  /* line 263, ../input/layout.scss */
   section .rect {
     height: 48vw;
     margin: 1em auto;
     width: 80vw;
   }
 }
-/* line 276, ../input/layout.scss */
+/* line 275, ../input/layout.scss */
 section .square {
   background: #f7484e;
   height: 24vw;
@@ -492,7 +498,7 @@ section .square {
   width: 24vw;
 }
 @media screen and (max-width: 720px) {
-  /* line 276, ../input/layout.scss */
+  /* line 275, ../input/layout.scss */
   section .square {
     height: 80vw;
     margin: 1em auto;
@@ -500,41 +506,17 @@ section .square {
   }
 }
 
-/* line 289, ../input/layout.scss */
-.block {
-  background: #dd4a35;
-  color: white;
-  cursor: auto;
-  display: block;
-  margin: 0em auto;
-  min-height: 80vh;
-  position: relative;
-  width: 85%;
-}
-/* line 299, ../input/layout.scss */
-.block::before {
-  content: '';
-  box-shadow: 0vw 1.1vw 1vw rgba(0, 0, 0, 0.5);
-  display: block;
-  height: 87.5%;
-  left: 5%;
-  position: absolute;
-  top: 10%;
-  width: 90%;
-  z-index: -1;
-}
-
-/* line 311, ../input/layout.scss */
+/* line 288, ../input/layout.scss */
 .elevated {
   left: 7.5%;
   position: fixed;
 }
-/* line 314, ../input/layout.scss */
+/* line 291, ../input/layout.scss */
 .elevated::before {
   opacity: 0;
 }
 
-/* line 319, ../input/layout.scss */
+/* line 296, ../input/layout.scss */
 .hide {
   background: #e9e9e9;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWU5ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -560,7 +542,7 @@ section .square {
   z-index: 992;
 }
 
-/* line 337, ../input/layout.scss */
+/* line 314, ../input/layout.scss */
 .profile {
   background: url("../../images/profile.png") no-repeat center center/cover;
   border-radius: 5em;
@@ -570,7 +552,7 @@ section .square {
   width: 10em;
 }
 @media screen and (max-width: 720px) {
-  /* line 337, ../input/layout.scss */
+  /* line 314, ../input/layout.scss */
   .profile {
     display: block;
     float: none;
@@ -580,7 +562,7 @@ section .square {
   }
 }
 
-/* line 353, ../input/layout.scss */
+/* line 330, ../input/layout.scss */
 footer {
   background: rgba(255, 255, 255, 0.9);
   bottom: 0%;
@@ -589,26 +571,22 @@ footer {
   padding: 0em 0em 0.3em 0em;
   position: relative;
   width: 100%;
-  -webkit-transition: all ease-in 0.25s;
-  -moz-transition: all ease-in 0.25s;
-  -o-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
 }
-/* line 363, ../input/layout.scss */
+/* line 339, ../input/layout.scss */
 footer:hover {
   background: white;
 }
-/* line 367, ../input/layout.scss */
+/* line 343, ../input/layout.scss */
 footer p {
   padding: 0em;
   margin: 0em;
 }
-/* line 372, ../input/layout.scss */
+/* line 348, ../input/layout.scss */
 footer span {
   margin: 0em 0.3em;
 }
 
-/* line 1, ../input/module.scss */
+/* line 2, ../input/module.scss */
 .mouse-container {
   display: block;
   height: 3em;
@@ -619,17 +597,22 @@ footer span {
   bottom: 2em;
 }
 
-/* line 11, ../input/module.scss */
+/* line 12, ../input/module.scss */
 #mouse {
   border: 0.2em solid #eee;
   border-radius: 1.5em;
   display: block;
   height: 3em;
   margin: 0px auto;
+  opacity: 0;
   position: relative;
   width: 1.5em;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
-/* line 19, ../input/module.scss */
+/* line 23, ../input/module.scss */
 #mouse::before {
   content: '';
   display: block;
@@ -641,40 +624,117 @@ footer span {
   position: absolute;
   left: 0.65em;
   top: 0.4em;
-  -webkit-transition: all ease-in-out 0.2s;
-  -moz-transition: all ease-in-out 0.2s;
-  -o-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
+  -webkit-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.2s;
+  -moz-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.2s;
+  -o-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.2s;
+  transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 0.2s;
 }
 
-/* line 35, ../input/module.scss */
+/* line 39, ../input/module.scss */
 .scrolling::before {
   opacity: 1!important;
   height: 0.8em!important;
 }
 
-/* line 42, ../input/module.scss */
+/* line 46, ../input/module.scss */
 .doneScrolling::before {
   opacity: 0.5!important;
   height: 0.2em!important;
   top: 1.2em!important;
 }
 
-/* line 50, ../input/module.scss */
+/* line 54, ../input/module.scss */
 .preScrolling::before {
   opacity: 0!important;
   top: 1.2em!important;
 }
 
-/* line 57, ../input/module.scss */
+/* line 61, ../input/module.scss */
 .hideScrolling::before {
   opacity: 0!important;
   display: none!important;
   top: 0.4em!important;
 }
 
-/* line 65, ../input/module.scss */
+/* line 69, ../input/module.scss */
 .startScrolling::before {
   opacity: 1!important;
   top: 0.4em!important;
+}
+
+/* line 75, ../input/module.scss */
+.display {
+  opacity: 1!important;
+}
+
+/* line 80, ../input/module.scss */
+.block {
+  background: #dd4a35;
+  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: auto;
+  display: block;
+  margin: 0em auto;
+  height: 80vh;
+  position: relative;
+  width: 85vw;
+  z-index: 1;
+}
+/* line 92, ../input/module.scss */
+.block::before {
+  background: #ea8439;
+  content: '';
+  display: block;
+  height: 80vh;
+  left: 0em;
+  margin-left: 0vw;
+  position: absolute;
+  top: 0em;
+  width: 85vw;
+  z-index: 2;
+}
+/* line 105, ../input/module.scss */
+.block::after {
+  background: #e9e9e9;
+  border: 4em solid #e9e9e9;
+  content: '';
+  display: block;
+  height: 80vh;
+  left: -4em;
+  margin-left: 0vw;
+  position: absolute;
+  top: -1em;
+  width: 85vw;
+  z-index: 3;
+}
+
+/* line 121, ../input/module.scss */
+.block.opening::after {
+  margin-left: 93vw;
+  width: 0em;
+  -webkit-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+  -moz-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+  -o-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+  transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+}
+
+/* line 129, ../input/module.scss */
+.block.open::before {
+  margin-left: 85vw;
+  width: 0em;
+  -webkit-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+  -moz-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+  -o-transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+  transition: all cubic-bezier(0.79, 0.09, 0.62, 1) 1s;
+}
+
+/* line 137, ../input/module.scss */
+.block.opened::before {
+  display: none;
+  opacity: 0;
+}
+/* line 141, ../input/module.scss */
+.block.opened::after {
+  display: none;
+  opacity: 0;
 }

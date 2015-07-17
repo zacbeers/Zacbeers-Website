@@ -11,6 +11,7 @@ $p = 0;
 $l = 0;
 $b = 0;
 ?>
+<script src="scripts/intro.js"></script>
 <div class="block">
     <div class="middle">
         <div class="profile"></div><p><h1>I'm a web developer and digital designer</h1></p>
