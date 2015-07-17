@@ -4,17 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php if (isset($page)) {echo ucwords($page);}
 else {echo "Zac Beers";} ?></title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Hi, my name is Zac Beers. I am a web developer and digital designer, with a passion for merging art and code.">
+        <meta name="keywords" content="web design,animation,zac beers,los angeles,california">
+        <meta name="author" content="Zac Beers">
         <!--google's stuff-->
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:700|Lato' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!--my stuff-->
         <link rel="stylesheet" type="text/css" href="style/output/global.css">
         <script src="scripts/toggles.js"></script>
-        <script>
-            function goBack() {
-                window.history.back();
-            }
-        </script>
     </head>
     <body>
         <div id="shadow"></div>

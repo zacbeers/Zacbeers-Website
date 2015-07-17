@@ -108,9 +108,13 @@ input[type="text"], input[type="password"], input[type="email"], input[type="che
   outline-color: #ea8439;
   padding: 0.4em 1.2em;
   width: 100%;
+  -webkit-transition: all ease-in-out 0.25s;
+  -moz-transition: all ease-in-out 0.25s;
+  -o-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
 }
 
-/* line 115, ../input/base.scss */
+/* line 116, ../input/base.scss */
 input[type="submit"], button {
   background: none transparent;
   border: 0.1em solid #666666;
@@ -119,19 +123,19 @@ input[type="submit"], button {
   cursor: pointer;
   outline-color: #ea8439;
   padding: 0.4em 1.2em;
-}
-
-/* line 125, ../input/base.scss */
-button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
-  background: #666666;
-  color: #e9e9e9;
   -webkit-transition: all ease-in-out 0.25s;
   -moz-transition: all ease-in-out 0.25s;
   -o-transition: all ease-in-out 0.25s;
   transition: all ease-in-out 0.25s;
 }
 
-/* line 130, ../input/base.scss */
+/* line 127, ../input/base.scss */
+button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
+  background: #666666;
+  color: #e9e9e9;
+}
+
+/* line 131, ../input/base.scss */
 .large {
   color: #666666;
   font-size: 110%;
@@ -139,7 +143,7 @@ button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type
   padding: 0.6em 1.2em;
 }
 
-/* line 136, ../input/base.scss */
+/* line 137, ../input/base.scss */
 i {
   display: inline-block;
   height: 3em;
@@ -147,13 +151,13 @@ i {
   width: 3em;
 }
 
-/* line 142, ../input/base.scss */
+/* line 143, ../input/base.scss */
 i.dl {
   background: url("images/icons/download.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 146, ../input/base.scss */
+/* line 147, ../input/base.scss */
 i.gh {
   background: url("images/icons/git.png") no-repeat center center;
   background-size: cover;
@@ -563,6 +567,11 @@ section .square {
 }
 
 /* line 330, ../input/layout.scss */
+.ctanav {
+  margin-bottom: 3em;
+}
+
+/* line 334, ../input/layout.scss */
 footer {
   background: rgba(255, 255, 255, 0.9);
   bottom: 0%;
@@ -572,16 +581,16 @@ footer {
   position: relative;
   width: 100%;
 }
-/* line 339, ../input/layout.scss */
+/* line 343, ../input/layout.scss */
 footer:hover {
   background: white;
 }
-/* line 343, ../input/layout.scss */
+/* line 347, ../input/layout.scss */
 footer p {
   padding: 0em;
   margin: 0em;
 }
-/* line 348, ../input/layout.scss */
+/* line 352, ../input/layout.scss */
 footer span {
   margin: 0em 0.3em;
 }

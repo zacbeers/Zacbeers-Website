@@ -110,6 +110,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="che
     outline-color: $orange;
     padding: 0.4em 1.2em;
     width: 100%;
+    @include ease-in-out(0.25s);
 }
 
 input[type="submit"], button {
@@ -120,12 +121,12 @@ input[type="submit"], button {
     cursor: pointer;
     outline-color: $orange;
     padding: 0.4em 1.2em;
+    @include ease-in-out(0.25s);
 }
 
 button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
     background: $lightGrey;
     color: $offWhite;
-    @include ease-in-out(0.25s);
 }
 .large{
     color: $lightGrey;
