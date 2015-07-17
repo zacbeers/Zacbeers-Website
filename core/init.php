@@ -4,10 +4,10 @@ session_start();
 $GLOBALS['config'] = array(
     'mysql' => array(
         //sorry, you're not getting in that easy :P
-        'host' => 'xxxxxxxxxx',
-        'username' => 'xxxxxxxxxx',
-        'password' => 'xxxxxxxxxx',
-        'db' => 'xxxxxxxxxx'
+        'host' => '???',
+        'username' => '???',
+        'password' => '???',
+        'db' => '???'
     ),
     'remember' => array(
         'cookie_name' => 'hash',

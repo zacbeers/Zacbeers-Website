@@ -39,10 +39,8 @@ if(Input::exists()) {
         }
     }
 } ?>
-    <h3>Contact</h3>
-    <p>you can reach me at <a href="mailto:zacbeers@gmail.com">zacbeers@gmail.com</a> or by simply filling out the form below, whichever you prefer.</p>
-</section>
-<div style="margin: 0px auto; width: 200px;">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:zacbeers@gmail.com">zacbeers@gmail.com</a> or by simply filling out the form below, whichever you prefer.</p>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <div class="field">
         <input type="text" id="name" name="name" placeholder="name">
@@ -51,9 +49,11 @@ if(Input::exists()) {
         <input type="email" id="email" name="email" placeholder="email">
     </div>
     <div class="field">
-        <textarea id="message" name="message" placeholder="message"></textarea>
+        <textarea id="message" name="message" placeholder="message" rows="8"></textarea>
     </div>
     <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
     <input type="submit" class="smlbtn c ct in o point wt nb" value="send">
 </form>
-</div>
+</section>
+<?php
+include_once 'footer.php';

@@ -1,0 +1,69 @@
+.mouse-container {
+    display: block;
+    height: 3em;
+    width: 1.5em;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.75em;
+    bottom: 2em;
+}
+
+#mouse {
+  border: 0.2em solid #eee;
+  border-radius: 1.5em;
+  display: block;
+  height: 3em;
+  margin: 0px auto;
+  position: relative;
+  width: 1.5em;
+  &::before {
+    content: '';
+    display: block;
+    width: 0.2em;
+    height: 0.2em;
+    border-radius: 0.2em;
+    background: #eee;
+    opacity: 1;
+    position: absolute;
+    left: 0.65em;
+    top: 0.4em;
+    @include ease-in-out(0.2s);
+  }
+}
+
+.scrolling {
+  &::before {
+    opacity: 1!important;
+    height: 0.8em!important;
+  }
+}
+
+.doneScrolling {
+  &::before {
+    opacity: 0.5!important;
+    height: 0.2em!important;
+    top: 1.2em!important;
+  }
+}
+
+.preScrolling {
+  &::before {
+    opacity: 0!important;
+    top: 1.2em!important;
+  }
+}
+
+.hideScrolling {
+  &::before {
+    opacity: 0!important;
+    display: none!important;
+    top: 0.4em!important;
+  }
+}
+
+.startScrolling {
+  &::before {
+    opacity: 1!important;
+    top: 0.4em!important;
+  }
+}

@@ -10,10 +10,12 @@ if(!$projects->count()) {
 } else {
     ?>
     <section>
+        <h2>Portfolio</h2>
+        <p>A collection of my professional work listed in order with the newest projects first. Click on an image to view more information about that particular project.</p>
     <?php
     foreach($projects->results() as $project) {
         ?>
-        <a href="project.php?id=<?php echo $project->id; ?>"><div class="rect" style="background: #<?php echo $project->color; ?> url('<?php echo $project->cover; ?>') no-repeat center center / cover;">
+        <a href="project.php?id=<?php echo $project->id; ?>"><div class="rect shadow" style="background: #<?php echo $project->color; ?> url('<?php echo $project->cover; ?>') no-repeat center center / cover;">
             <p style="background: #<?php echo $project->color; ?>; color: #<?php echo $project->textcolor; ?>;";><?php echo $project->title; ?></p>
         </div></a>
         <?php

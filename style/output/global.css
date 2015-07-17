@@ -1,81 +1,139 @@
 /*colors*/
 /*fonts*/
 /*easing*/
-/* line 20, ../input/base.scss */
+/* line 28, ../input/base.scss */
 ::selection, ::-moz-selection {
   background: #666666;
-  color: #222222;
-}
-
-/* line 25, ../input/base.scss */
-body {
-  background: #222222;
-  color: #666666;
-  cursor: default;
-  font-family: "Lato", sans-serif;
-  margin: 0em;
+  color: #272727;
 }
 
 /* line 33, ../input/base.scss */
+body {
+  background: #e9e9e9;
+  color: #666666;
+  cursor: default;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin: 5.6em 0em 0em 0em;
+  width: 100%;
+}
+
+/* line 43, ../input/base.scss */
+#shadow {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YjRiNCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I1YjRiNCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, rgba(181, 180, 180, 0.3) 0%, rgba(181, 180, 180, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(181, 180, 180, 0.3)), color-stop(100%, rgba(181, 180, 180, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(181, 180, 180, 0.3) 0%, rgba(181, 180, 180, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(181, 180, 180, 0.3) 0%, rgba(181, 180, 180, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(181, 180, 180, 0.3) 0%, rgba(181, 180, 180, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(181, 180, 180, 0.3) 0%, rgba(181, 180, 180, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4db5b4b4', endColorstr='#00b5b4b4',GradientType=0 );
+  /* IE6-8 */
+  height: 100%;
+  position: fixed;
+  top: 0em;
+  z-index: -2;
+  width: 100%;
+}
+
+/* line 59, ../input/base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
   margin: 0em 0.2em;
 }
 
-/* line 39, ../input/base.scss */
+/* line 63, ../input/base.scss */
+h2 {
+  font-size: 150%;
+  line-height: 3em;
+}
+
+/* line 68, ../input/base.scss */
 h3 {
   color: #333333;
 }
 
-/* line 43, ../input/base.scss */
+/* line 72, ../input/base.scss */
 a {
-  color: tomato;
+  color: #dd4a35;
   cursor: pointer;
   margin: 0em 0.3em;
   text-decoration: none;
   outline-color: #ea8439;
 }
 
-/* line 50, ../input/base.scss */
+/* line 79, ../input/base.scss */
 a:hover {
   color: #f7484e;
-  text-decoration: underline;
   -webkit-transition: all ease-in 0.25s;
   -moz-transition: all ease-in 0.25s;
   -o-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
 
-/* line 55, ../input/base.scss */
-button, input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"], textarea, input[type="submit"] {
-  background: #222222;
+/* line 84, ../input/base.scss */
+.field {
+  display: block;
+  margin: 1em auto;
+  min-width: 200px;
+  width: 40%;
+}
+/* line 90, ../input/base.scss */
+.field p {
+  margin: 2em 0em 0em 0em;
+}
+/* line 94, ../input/base.scss */
+.field img {
+  display: block;
+}
+
+/* line 99, ../input/base.scss */
+input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"], textarea {
+  background: none transparent;
   border: 0.1em solid #666666;
+  box-sizing: border-box;
+  color: #666666;
+  cursor: pointer;
+  outline-color: #ea8439;
+  padding: 0.4em 1.2em;
+  width: 100%;
+}
+
+/* line 110, ../input/base.scss */
+input[type="submit"], button {
+  background: none transparent;
+  border: 0.1em solid #666666;
+  box-sizing: border-box;
   color: #666666;
   cursor: pointer;
   outline-color: #ea8439;
   padding: 0.4em 1.2em;
 }
 
-/* line 63, ../input/base.scss */
+/* line 120, ../input/base.scss */
 button:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, textarea:focus, input[type="submit"]:hover {
   background: #666666;
-  color: #222222;
+  color: #e9e9e9;
   -webkit-transition: all ease-in 0.25s;
   -moz-transition: all ease-in 0.25s;
   -o-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
 
-/* line 68, ../input/base.scss */
+/* line 125, ../input/base.scss */
 .large {
   color: #666666;
-  font-family: "Ubuntu", sans-serif;
   font-size: 110%;
+  font-weight: bold;
   padding: 0.6em 1.2em;
 }
 
-/* line 74, ../input/base.scss */
+/* line 131, ../input/base.scss */
 i {
   display: inline-block;
   height: 3em;
@@ -83,13 +141,13 @@ i {
   width: 3em;
 }
 
-/* line 80, ../input/base.scss */
+/* line 137, ../input/base.scss */
 i.dl {
   background: url("images/icons/download.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 84, ../input/base.scss */
+/* line 141, ../input/base.scss */
 i.gh {
   background: url("images/icons/git.png") no-repeat center center;
   background-size: cover;
@@ -97,53 +155,91 @@ i.gh {
 
 /* line 1, ../input/layout.scss */
 header {
+  background: rgba(255, 255, 255, 0.9);
   box-sizing: border-box;
   display: block;
-  height: 4.2em;
+  height: 4.4em;
   left: 0em;
-  opacity: 0.3;
   padding: 1em;
+  position: fixed;
   top: 0em;
   width: 100%;
+  z-index: 995;
   -webkit-transition: all ease-in 0.25s;
   -moz-transition: all ease-in 0.25s;
   -o-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
-/* line 12, ../input/layout.scss */
+/* line 14, ../input/layout.scss */
 header:hover {
-  opacity: 1;
+  background: white;
 }
-/* line 16, ../input/layout.scss */
+/* line 18, ../input/layout.scss */
 header a {
   display: inline-block;
   float: left;
 }
-/* line 21, ../input/layout.scss */
+/* line 23, ../input/layout.scss */
 header .breadcrumbs {
   line-height: 2.5em;
 }
-/* line 25, ../input/layout.scss */
-header h1 {
-  color: #666666;
-  display: inline-block;
-  float: left;
-  font-weight: normal;
-}
-/* line 32, ../input/layout.scss */
-header svg {
+/* line 27, ../input/layout.scss */
+header #logo {
   cursor: pointer;
   display: block;
   position: fixed;
-  right: 1.2em;
+  left: 0em;
   top: 1.2em;
   z-index: 997;
 }
+/* line 36, ../input/layout.scss */
+header #openNav {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  right: 1.6em;
+  top: 1.3em;
+  z-index: 997;
+  -webkit-transition: all ease-in 0.15s;
+  -moz-transition: all ease-in 0.15s;
+  -o-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+}
+/* line 45, ../input/layout.scss */
+header #openNav:hover {
+  height: 2em;
+  right: 1.5em;
+  top: 1.2em;
+  width: 2em;
+}
+/* line 53, ../input/layout.scss */
+header #menuText {
+  color: white;
+  cursor: pointer;
+  display: block;
+  line-height: 2em;
+  margin: 0em;
+  position: fixed;
+  text-align: right;
+  top: 1.2em;
+  right: 1.5em;
+  z-index: 996;
+  -webkit-transition: all ease-in 0.25s;
+  -moz-transition: all ease-in 0.25s;
+  -o-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
 
-/* line 42, ../input/layout.scss */
+/* line 69, ../input/layout.scss */
+header:hover > #menuText {
+  color: #666666;
+  margin: 0em 2.5em;
+}
+
+/* line 74, ../input/layout.scss */
 nav {
-  background: #333333;
-  box-shadow: -0.1vw 0vw 1vw black;
+  background: white;
+  box-shadow: 0.5vw 0vw 1.5vw rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   display: block;
   height: 100%;
@@ -158,41 +254,58 @@ nav {
   -o-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
-/* line 56, ../input/layout.scss */
+/* line 88, ../input/layout.scss */
 nav svg {
   cursor: pointer;
   display: inline-block;
   float: right;
-  margin: 0.2em 0.2em;
+  margin: 0.3em 0.3em;
   position: relative;
+  -webkit-transition: all ease-in 0.15s;
+  -moz-transition: all ease-in 0.15s;
+  -o-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
 }
-/* line 64, ../input/layout.scss */
+/* line 96, ../input/layout.scss */
+nav svg:hover {
+  height: 2em;
+  margin: 0.2em 0.2em;
+  width: 2em;
+}
+/* line 103, ../input/layout.scss */
 nav ul {
   display: block;
   clear: both;
 }
-/* line 67, ../input/layout.scss */
+/* line 106, ../input/layout.scss */
 nav ul li {
   display: block;
   text-align: right;
 }
-/* line 70, ../input/layout.scss */
+/* line 109, ../input/layout.scss */
 nav ul li a {
+  border-bottom: 0em solid white;
   color: #666666;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 150%;
-  font-weight: bold;
 }
-/* line 76, ../input/layout.scss */
+/* line 115, ../input/layout.scss */
 nav ul li a:hover {
-  color: tomato;
+  border-bottom: 0.075em solid #f7484e;
 }
-/* line 82, ../input/layout.scss */
+/* line 121, ../input/layout.scss */
 nav.opened {
   right: 0em;
 }
+@media screen and (max-width: 720px) {
+  /* line 121, ../input/layout.scss */
+  nav.opened {
+    width: 70%;
+    text-align: center!important;
+  }
+}
 
-/* line 87, ../input/layout.scss */
+/* line 130, ../input/layout.scss */
 #menuGhost {
   display: block;
   height: 100vh;
@@ -202,69 +315,99 @@ nav.opened {
   width: 100vw;
   z-index: 998;
 }
-/* line 96, ../input/layout.scss */
+/* line 139, ../input/layout.scss */
 #menuGhost.opened {
   right: 0%;
 }
 
-/* line 101, ../input/layout.scss */
+/* line 144, ../input/layout.scss */
 article, nav ul {
   margin: 6em 0em;
 }
 
-/* line 105, ../input/layout.scss */
+/* line 148, ../input/layout.scss */
 .edit {
   height: 15em;
 }
 
-/* line 109, ../input/layout.scss */
-.field {
-  margin: 1em 0em;
-}
-/* line 112, ../input/layout.scss */
-.field p {
-  margin: 2em 0em 0em 0em;
-}
-/* line 116, ../input/layout.scss */
-.field img {
+/* line 152, ../input/layout.scss */
+.middle {
+  box-sizing: border-box;
   display: block;
+  margin: 0em auto;
+  padding: 2em;
+  width: 80%;
 }
-
-/* line 121, ../input/layout.scss */
-section {
+/* line 158, ../input/layout.scss */
+.middle p {
+  clear: both;
+  display: block;
+  margin: 0px auto;
   text-align: center;
 }
-/* line 124, ../input/layout.scss */
-section div {
+/* line 164, ../input/layout.scss */
+.middle h1 {
+  line-height: 4em;
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  /* line 164, ../input/layout.scss */
+  .middle h1 {
+    font-size: 150%;
+    line-height: 4em;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 164, ../input/layout.scss */
+  .middle h1 {
+    font-size: 150%;
+    line-height: 2em;
+    text-align: center;
+  }
+}
+
+/* line 180, ../input/layout.scss */
+section {
+  text-align: center;
+  min-height: 100vh;
+}
+/* line 184, ../input/layout.scss */
+section div.shadow {
   background-color: #fff;
   background-size: cover!important;
   cursor: pointer;
   display: inline-block;
-  height: 24vw;
   position: relative;
 }
-/* line 132, ../input/layout.scss */
-section div::before {
+/* line 191, ../input/layout.scss */
+section div.shadow::before {
   content: '';
-  box-shadow: 0vw 1.1vw 1vw #000;
+  box-shadow: 0vw 1.1vw 1vw rgba(0, 0, 0, 0.5);
   display: block;
   height: 70%;
   left: 10%;
   position: absolute;
-  top: 26%;
+  top: 25.5%;
   width: 80%;
   z-index: -1;
 }
-/* line 144, ../input/layout.scss */
-section div p {
+@media screen and (max-width: 1029px) {
+  /* line 184, ../input/layout.scss */
+  section div.shadow {
+    margin-bottom: 6em;
+  }
+}
+/* line 206, ../input/layout.scss */
+section div.shadow p {
   display: block;
-  font-family: "Ubuntu", sans-serif;
   font-size: 200%;
   font-weight: bold;
   height: 100%;
   line-height: 24vw;
   margin: 0em;
   opacity: 0;
+  overflow: hidden;
   vertical-align: middle;
   width: 100%;
   -webkit-transition: all ease-in 0.25s;
@@ -272,65 +415,266 @@ section div p {
   -o-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
-/* line 156, ../input/layout.scss */
-section div p:hover {
+/* line 218, ../input/layout.scss */
+section div.shadow p:hover {
   opacity: 1;
 }
-/* line 163, ../input/layout.scss */
+@media screen and (max-width: 1375px) and (min-width: 1030px) {
+  /* line 206, ../input/layout.scss */
+  section div.shadow p {
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 1029px) {
+  /* line 206, ../input/layout.scss */
+  section div.shadow p {
+    font-size: 100%;
+    line-height: 1em;
+    height: 1em;
+    position: absolute;
+    top: 110%;
+    overflow: auto;
+    opacity: 1;
+    color: #666666 !important;
+    background: none transparent!important;
+  }
+}
+/* line 238, ../input/layout.scss */
+section img {
+  display: block;
+  max-width: 100%;
+  margin: 0em auto;
+}
+/* line 242, ../input/layout.scss */
 section img::before {
   content: '';
   box-shadow: 0vw 1.1vw 1vw #000;
   display: block;
-  height: 70%;
+  height: 69%;
   left: 10%;
   position: absolute;
-  top: 26%;
+  top: 25.5%;
   width: 80%;
   z-index: -1;
 }
-/* line 176, ../input/layout.scss */
+/* line 255, ../input/layout.scss */
 section p {
-  width: 50vw;
   margin: 3em auto;
+  width: 50vw;
 }
-/* line 181, ../input/layout.scss */
+@media screen and (max-width: 720px) {
+  /* line 255, ../input/layout.scss */
+  section p {
+    margin: 1em auto;
+    width: 80vw;
+  }
+}
+/* line 264, ../input/layout.scss */
 section .rect {
-  background: tomato;
+  background: #dd4a35;
+  height: 24vw;
   margin: 2vw;
   width: 40vw;
 }
-/* line 187, ../input/layout.scss */
+@media screen and (max-width: 720px) {
+  /* line 264, ../input/layout.scss */
+  section .rect {
+    height: 48vw;
+    margin: 1em auto;
+    width: 80vw;
+  }
+}
+/* line 276, ../input/layout.scss */
 section .square {
   background: #f7484e;
+  height: 24vw;
   margin: 3vw;
   width: 24vw;
 }
+@media screen and (max-width: 720px) {
+  /* line 276, ../input/layout.scss */
+  section .square {
+    height: 80vw;
+    margin: 1em auto;
+    width: 80vw;
+  }
+}
 
-/* line 194, ../input/layout.scss */
+/* line 289, ../input/layout.scss */
+.block {
+  background: #dd4a35;
+  color: white;
+  cursor: auto;
+  display: block;
+  margin: 0em auto;
+  min-height: 80vh;
+  position: relative;
+  width: 85%;
+}
+/* line 299, ../input/layout.scss */
+.block::before {
+  content: '';
+  box-shadow: 0vw 1.1vw 1vw rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 87.5%;
+  left: 5%;
+  position: absolute;
+  top: 10%;
+  width: 90%;
+  z-index: -1;
+}
+
+/* line 311, ../input/layout.scss */
+.elevated {
+  left: 7.5%;
+  position: fixed;
+}
+/* line 314, ../input/layout.scss */
+.elevated::before {
+  opacity: 0;
+}
+
+/* line 319, ../input/layout.scss */
+.hide {
+  background: #e9e9e9;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWU5ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #dddddd 0%, #e9e9e9 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #e9e9e9));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dddddd 0%, #e9e9e9 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dddddd 0%, #e9e9e9 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dddddd 0%, #e9e9e9 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #dddddd 0%, #e9e9e9 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#e9e9e9',GradientType=0 );
+  /* IE6-8 */
+  display: block;
+  height: 100%;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  z-index: 992;
+}
+
+/* line 337, ../input/layout.scss */
+.profile {
+  background: url("../../images/profile.png") no-repeat center center/cover;
+  border-radius: 5em;
+  display: block;
+  height: 10em;
+  margin: 2em auto 1em auto;
+  width: 10em;
+}
+@media screen and (max-width: 720px) {
+  /* line 337, ../input/layout.scss */
+  .profile {
+    display: block;
+    float: none;
+    height: 6em;
+    margin: 2em auto 1em auto;
+    width: 6em;
+  }
+}
+
+/* line 353, ../input/layout.scss */
 footer {
-  background: #111111;
+  background: rgba(255, 255, 255, 0.9);
   bottom: 0%;
   box-sizing: border-box;
   left: 0%;
-  opacity: 0.3;
   padding: 0em 0em 0.3em 0em;
-  position: fixed;
+  position: relative;
   width: 100%;
   -webkit-transition: all ease-in 0.25s;
   -moz-transition: all ease-in 0.25s;
   -o-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
-/* line 205, ../input/layout.scss */
+/* line 363, ../input/layout.scss */
 footer:hover {
-  opacity: 1;
+  background: white;
 }
-/* line 209, ../input/layout.scss */
+/* line 367, ../input/layout.scss */
 footer p {
   padding: 0em;
   margin: 0em;
 }
-/* line 214, ../input/layout.scss */
+/* line 372, ../input/layout.scss */
 footer span {
   margin: 0em 0.3em;
+}
+
+/* line 1, ../input/module.scss */
+.mouse-container {
+  display: block;
+  height: 3em;
+  width: 1.5em;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.75em;
+  bottom: 2em;
+}
+
+/* line 11, ../input/module.scss */
+#mouse {
+  border: 0.2em solid #eee;
+  border-radius: 1.5em;
+  display: block;
+  height: 3em;
+  margin: 0px auto;
+  position: relative;
+  width: 1.5em;
+}
+/* line 19, ../input/module.scss */
+#mouse::before {
+  content: '';
+  display: block;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 0.2em;
+  background: #eee;
+  opacity: 1;
+  position: absolute;
+  left: 0.65em;
+  top: 0.4em;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+/* line 35, ../input/module.scss */
+.scrolling::before {
+  opacity: 1!important;
+  height: 0.8em!important;
+}
+
+/* line 42, ../input/module.scss */
+.doneScrolling::before {
+  opacity: 0.5!important;
+  height: 0.2em!important;
+  top: 1.2em!important;
+}
+
+/* line 50, ../input/module.scss */
+.preScrolling::before {
+  opacity: 0!important;
+  top: 1.2em!important;
+}
+
+/* line 57, ../input/module.scss */
+.hideScrolling::before {
+  opacity: 0!important;
+  display: none!important;
+  top: 0.4em!important;
+}
+
+/* line 65, ../input/module.scss */
+.startScrolling::before {
+  opacity: 1!important;
+  top: 0.4em!important;
 }

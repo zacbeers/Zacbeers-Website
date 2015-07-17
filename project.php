@@ -26,7 +26,7 @@ if (!isset($_GET['id'])) {
                     if (strpos($text,'images/') !== false) {
                     ?>
                     <p>
-                    <img src="<?php echo $text; ?>">
+                        <a href="<?php echo $text; ?>" target="_blank"><img src="<?php echo $text; ?>"></a>
                     </p>
                     <?php
                     } else {
